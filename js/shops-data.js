@@ -476,7 +476,7 @@ window.SHOPS = [
 },
   {
     "name": "The Druid's Grove",
-    "owner": "Kush_XD",
+    "owner": "LadyMariska",
     "type": "specialized",
     "location": "-140, 52",
     "tags": ["nature", "wood"],
@@ -684,6 +684,9 @@ window.SHOPS = [
       "Spruce Saplings: 2D for 16",
       "Mangrove Propagules: 2D for 16",
       "Jungle Saplings: 6D for 8",
+      "Dirt: 1D for 4 Stacks",
+      "Dirt: 7D for 1 Shulker",
+      "Dirt: 6D each for 10+ Shulkers",
       "Crimson Nylium: 2D for 8",
       "Warped Nylium: 2D for 8",
       "Warped Fungus: 2D for 16",
@@ -746,28 +749,17 @@ window.SHOPS = [
     "location": "40, 33",
     "tags": ["general"],
     "items": [
-      "Andesite: 3D for 1 Stack",
       "Armor: 2D for 1",
-      "Bookshelves: 1D for 16",
-      "Cobblestone: 1D for 1 Stack",
-      "Diorite: 3D for 1 Stack",
-      "Elytras: 30D for 1",
-      "Elytras (New Players): 12D for 1",
-      "Enchantment Books: 2D for 1",
-      "End Rods: 4D for 1 Stack",
       "Golden Carrots: 1D for 2 Stacks",
       "Gunpowder: 2D for 1 Stack",
       "Paper: 1D for 1 Stack",
       "Potions: 3D for 1",
-      "Steak: 2D for 1 Stack",
-      "Stone: 1D for 1 Stack",
       "T1 Rockets: 1D for 6 Stacks",
       "T2 Rockets: 1D for 4 Stacks",
       "T3 Rockets: 1D for 3 Stacks",
       "TNT: 10D for 1 Stack",
       "Tools: 2D for 1",
       "Totems: 1D for 2",
-      "Tuff: 4D for 1 Stack",
       "Wood types: 2D for 1 Stack"
     ]
   },
@@ -1278,7 +1270,7 @@ window.SHOPS = [
   "name": "Tree's Gallery & Giftshop",
   "owner": "Treeweaver",
   "type": "specialized",
-  "location": "115, -19",
+  "location": "128, -12",
   "tags": ["decoration"],
   "items": [
     "Map Art: 4D for 1"
@@ -1635,15 +1627,34 @@ window.SHOPS = [
   "tags": ["building-blocks", "nature", "decoration"],
   "items": [
     "Azalea: 1D for 1 Stack",
+    "Crimson Root: 1D for 1 Stack",
     "Flowering Azalea: 1D for 1 Stack",
+    "Hanging Root: 2D for 1 Stack",
+    "Hay Bale: 6D for 1 Stack",
     "Moss: 1D for 1 Stack",
     "Moss Carpet: 1D for 1 Stack",
     "Mossy Cobblestone: 1D for 1 Stack",
     "Mossy Stone Brick: 1D for 1 Stack",
     "Pale Moss: 1D for 1 Stack",
-    "Pale Moss Carpet: 1D for 1 Stack"
+    "Pale Moss Carpet: 1D for 1 Stack",
+    "Warped Root: 1D for 1 Stack"
   ]
-}
+},
+{
+  "name": "Bamboo Barn",
+  "owner": "JMDnix",
+  "type": "specialized",
+  "location": "-43, 6",
+  "tags": ["wood", "building-blocks", "nature"],
+  "items": [
+    "Bamboo Blocks: 36D for 1 Shulker",
+    "Bamboo Mosaic: 18D for 1 Shulker",
+    "Bamboo Planks: 18D for 1 Shulker",
+    "Bamboo Shoots: 4D for 1 Shulker",
+    "Scaffolding: 1D for 1 Stack"
+  ]
+},
+
 
 
 

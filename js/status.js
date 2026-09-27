@@ -1,5 +1,5 @@
 (function () {
-  const cfg = window.XAPRO_CONFIG;
+  const cfg = window.TURTLE_CONFIG;
   if (!cfg) return;
 
   const pillEl = document.getElementById('status-pill');

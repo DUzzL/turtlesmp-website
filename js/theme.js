@@ -3,9 +3,9 @@
   // Default is light; only switch to dark when explicitly chosen.
   // Read order: localStorage first (per-browser), then cookie (cross-subdomain / persistent).
   var saved = null;
-  try { saved = localStorage.getItem('xapro-theme'); } catch (e) {}
+  try { saved = localStorage.getItem('turtle-theme'); } catch (e) {}
   if (!saved) {
-    saved = readCookie('xapro-theme');
+    saved = readCookie('turtle-theme');
   }
 
   if (saved === 'dark') {
@@ -35,7 +35,7 @@
 
   function writeCookie(name, value) {
     try {
-      // domain=.xaprosmp.xyz covers the apex domain and all subdomains (www, web., etc.)
+      // domain=.turtle-smp.com covers the apex domain and all subdomains (www, web., etc.)
       // max-age=10 years, SameSite=Lax so it survives cross-area navigation.
       var host = window.location.hostname || '';
       var domain = host.indexOf('.') >= 0 ? '; domain=' + host : '';
@@ -48,8 +48,8 @@
 
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
-    try { localStorage.setItem('xapro-theme', theme); } catch (e) {}
-    writeCookie('xapro-theme', theme);
+    try { localStorage.setItem('turtle-theme', theme); } catch (e) {}
+    writeCookie('turtle-theme', theme);
     syncButton();
   }
 

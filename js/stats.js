@@ -5,7 +5,7 @@
   // The stats endpoint exposed by the Stats Exporter mod (fronted by a
   // reverse proxy / Cloudflare Tunnel as an HTTPS subdomain). Change this
   // single constant if the endpoint moves.
-  const STATS_ENDPOINT = 'https://api.xaprosmp.xyz/api/stats';
+  const STATS_ENDPOINT = 'https://api.turtle-smp.com/api/stats';
 
   // How often to re-fetch data client-side, in minutes. Aligned with the
   // mod's default cache interval (10 minutes).

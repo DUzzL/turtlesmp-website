@@ -474,34 +474,52 @@ window.SHOPS = [
     "Yellow Wool: 2D for 1 Stack"
   ]
 },
-  {
-    "name": "The Druid's Grove",
-    "owner": "LadyMariska",
-    "type": "specialized",
-    "location": "-140, 52",
-    "tags": ["nature", "wood"],
-    "items": [
-      "Allium: 2D for 1 Stack",
-      "Azure Bluet: 2D for 1 Stack",
-      "Bamboo: 1D for 1 Stack",
-      "Blue Orchid: TBAD for 1 Stack",
-      "Cornflower: 2D for 1 Stack",
-      "Dandilion: 2D for 1 Stack",
-      "Lilac: 3D for 1 Stack",
-      "Lily of the Valley: 2D for 1 Stack",
-      "Orange Tulip: 2D for 1 Stack",
-      "Oxeye Daisy: 2D for 1 Stack",
-      "Peony: 3D for 1 Stack",
-      "Pink Petals: 2D for 1 Stack",
-      "Pink Tulip: 2D for 1 Stack",
-      "Poppy: 2D for 1 Stack",
-      "Red Tulip: 2D for 1 Stack",
-      "Rose: 3D for 1 Stack",
-      "Sunflower: 2D for 1 Stack",
-      "Vines: 1D for 1 Stack",
-      "White Tulip: 2D for 1 Stack",
-      "Wildflowers: 2D for 1 Stack"
-    ]
+ {
+  "name": "The Druid's Grove",
+  "owner": "LadyMariska",
+  "type": "specialized",
+  "location": "-140, 52",
+  "tags": ["nature", "wood"],
+  "items": [
+    "Allium: 1D for 3 Stacks",
+    "Allium: 9D for 1 Shulker",
+    "Azure Bluet: 1D for 3 Stacks",
+    "Azure Bluet: 9D for 1 Shulker",
+    "Bamboo: 1D for 1 Stack",
+    "Blue Orchid: TBAD for 1 Stack",
+    "Cornflower: 1D for 3 Stacks",
+    "Cornflower: 9D for 1 Shulker",
+    "Dandelion: 1D for 3 Stacks",
+    "Dandelion: 9D for 1 Shulker",
+    "Lilac: 1D for 3 Stacks",
+    "Lilac: 9D for 1 Shulker",
+    "Lily of the Valley: 1D for 3 Stacks",
+    "Lily of the Valley: 9D for 1 Shulker",
+    "Orange Tulip: 1D for 3 Stacks",
+    "Orange Tulip: 9D for 1 Shulker",
+    "Oxeye Daisy: 1D for 3 Stacks",
+    "Oxeye Daisy: 9D for 1 Shulker",
+    "Peony: 1D for 3 Stacks",
+    "Peony: 9D for 1 Shulker",
+    "Pink Petals: 2D for 1 Stack",
+    "Pink Tulip: 1D for 3 Stacks",
+    "Pink Tulip: 9D for 1 Shulker",
+    "Poplar Logs: 2D for 1 Stack",
+    "Poplar Saplings: 2D for 16",
+    "Poppy: 1D for 3 Stacks",
+    "Poppy: 9D for 1 Shulker",
+    "Red Tulip: 1D for 3 Stacks",
+    "Red Tulip: 9D for 1 Shulker",
+    "Rose Bush: 1D for 3 Stacks",
+    "Rose Bush: 9D for 1 Shulker",
+    "Sunflower: 1D for 3 Stacks",
+    "Sunflower: 9D for 1 Shulker",
+    "Vines: 1D for 1 Stack",
+    "White Tulip: 1D for 3 Stacks",
+    "White Tulip: 9D for 1 Shulker",
+    "Wildflowers: 1D for 3 Stacks",
+    "Wildflowers: 9D for 1 Shulker"
+  ]
   },
   {
     "name": "The Pirates",
@@ -636,38 +654,42 @@ window.SHOPS = [
     ]
   },
   {
-    "name": "Apple's Garden Supplies",
-    "owner": "TinyApplePie",
-    "type": "specialized",
-    "location": "-41, -57",
-    "tags": ["nature"],
-    "items": [
-      "Firefly Bush: 1D for 32",
-      "Bush: 1D for 32",
-      "Fern: 1D for 32",
-      "Hanging Roots: 1D for 32",
-      "Pale Hanging Moss: 1D for 32",
-      "Glow Lichen: 1D for 32",
-      "Glowberries: 1D for 1 Stack",
-      "Big Dripleaf: 1D for 32",
-      "Flowering Azalea: 1D for 1 Stack",
-      "Azalea: 1D for 1 Stack",
-      "Mangrove Roots: 1D for 32",
-      "Mushroom Stem: 2D for 1 Stack",
-      "Red Mushroom Block: 1D for 1 Stack",
-      "Brown Mushroom Block: 1D for 1 Stack",
-      "Oak Leaves: 1D for 2 Stacks",
-      "Dark Oak Leaves: 1D for 2 Stacks",
-      "Spruce Leaves: 1D for 2 Stacks",
-      "Acacia Leaves: 1D for 2 Stacks",
-      "Jungle Leaves: 1D for 2 Stacks",
-      "Birch Leaves: 1D for 2 Stacks",
-      "Mangrove Leaves: 1D for 2 Stacks",
-      "Pale Oak Leaves: 1D for 2 Stacks",
-      "Cherry Leaves: 1D for 2 Stacks",
-      "Azalea Leaves: 1D for 2 Stacks",
-      "Flowering Azalea Leaves: 1D for 1 Stack"
-    ]
+  "name": "Apple's Garden Supplies",
+  "owner": "TinyApplePie",
+  "type": "specialized",
+  "location": "-41, -57",
+  "tags": ["nature"],
+  "items": [
+    "Acacia Leaves: 1D for 2 Stacks",
+    "Azalea: 1D for 1 Stack",
+    "Azalea Leaves: 1D for 2 Stacks",
+    "Big Dripleaf: 1D for 32",
+    "Birch Leaves: 1D for 2 Stacks",
+    "Brown Mushroom Block: 1D for 1 Stack",
+    "Bush: 1D for 32",
+    "Cherry Leaves: 1D for 2 Stacks",
+    "Dark Oak Leaves: 1D for 2 Stacks",
+    "Fern: 1D for 32",
+    "Firefly Bush: 1D for 32",
+    "Flowering Azalea: 1D for 1 Stack",
+    "Flowering Azalea Leaves: 1D for 1 Stack",
+    "Glow Lichen: 1D for 32",
+    "Glowberries: 1D for 1 Stack",
+    "Hanging Roots: 1D for 32",
+    "Jungle Leaves: 1D for 2 Stacks",
+    "Mangrove Leaves: 1D for 2 Stacks",
+    "Mangrove Roots: 1D for 32",
+    "Mushroom Stem: 2D for 1 Stack",
+    "Oak Leaves: 1D for 2 Stacks",
+    "Orange Poplar Leaves: 1D for 2 Stacks",
+    "Pale Hanging Moss: 1D for 32",
+    "Pale Oak Leaves: 1D for 2 Stacks",
+    "Red Mushroom Block: 1D for 1 Stack",
+    "Red Poplar Leaves: 1D for 2 Stacks",
+    "Red Shrub: 1D for 32",
+    "Spruce Leaves: 1D for 2 Stacks",
+    "Yellow Poplar Leaves: 1D for 2 Stacks"
+  ]
   },
   {
     "name": "Tree Babies",
@@ -684,6 +706,7 @@ window.SHOPS = [
       "Spruce Saplings: 2D for 16",
       "Mangrove Propagules: 2D for 16",
       "Jungle Saplings: 6D for 8",
+      "Poplar Saplings: 2D for 16",
       "Dirt: 1D for 4 Stacks",
       "Dirt: 7D for 1 Shulker",
       "Dirt: 6D each for 10+ Shulkers",
@@ -752,7 +775,6 @@ window.SHOPS = [
       "Armor: 2D for 1",
       "Golden Carrots: 1D for 2 Stacks",
       "Gunpowder: 2D for 1 Stack",
-      "Paper: 1D for 1 Stack",
       "Potions: 3D for 1",
       "T1 Rockets: 1D for 6 Stacks",
       "T2 Rockets: 1D for 4 Stacks",
@@ -760,7 +782,8 @@ window.SHOPS = [
       "TNT: 10D for 1 Stack",
       "Tools: 2D for 1",
       "Totems: 1D for 2",
-      "Wood types: 2D for 1 Stack"
+      "Wood types: 2D for 1 Stack",
+      "Enchanted Books: 2D for 1"
     ]
   },
   {
@@ -1631,6 +1654,7 @@ window.SHOPS = [
     "Flowering Azalea: 1D for 1 Stack",
     "Hanging Root: 2D for 1 Stack",
     "Hay Bale: 6D for 1 Stack",
+    "Kelp Block: 6D for 1 Stack",
     "Moss: 1D for 1 Stack",
     "Moss Carpet: 1D for 1 Stack",
     "Mossy Cobblestone: 1D for 1 Stack",
@@ -1638,6 +1662,27 @@ window.SHOPS = [
     "Pale Moss: 1D for 1 Stack",
     "Pale Moss Carpet: 1D for 1 Stack",
     "Warped Root: 1D for 1 Stack"
+  ]
+},
+{
+  "name": "Vinyl Shop",
+  "owner": "Baaxton",
+  "type": "specialized",
+  "location": "-214, -44",
+  "tags": ["decoration", "valuables"],
+  "items": [
+    "Music Disc 11: 2D for 1",
+    "Music Disc 13: 1D for 1",
+    "Music Disc Blocks: 5D for 1",
+    "Music Disc Cat: 1D for 1",
+    "Music Disc Chirp: 5D for 1",
+    "Music Disc Far: 5D for 1",
+    "Music Disc Mall: 5D for 1",
+    "Music Disc Mellohi: 10D for 1",
+    "Music Disc Stal: 5D for 1",
+    "Music Disc Strad: 5D for 1",
+    "Music Disc Wait: 5D for 1",
+    "Music Disc Ward: 5D for 1"
   ]
 },
 {
@@ -1652,6 +1697,28 @@ window.SHOPS = [
     "Bamboo Planks: 18D for 1 Shulker",
     "Bamboo Shoots: 4D for 1 Shulker",
     "Scaffolding: 1D for 1 Stack"
+  ]
+},
+{
+  "name": "badoinkaz' bazaar",
+  "owner": "badoinkaz",
+  "type": "specialized",
+  "location": "211.05, -11.08",
+  "tags": ["valuables", "enchanting"],
+  "items": [
+    "Netherite Ingot: 40D for 1",
+    "Netherite Upgrade Copy: 3D for 1"
+  ]
+},
+{
+  "name": "Sheep Head",
+  "owner": "Cacavaleira",
+  "type": "specialized",
+  "location": "80, 51",
+  "tags": ["building-blocks", "decoration"],
+  "items": [
+    "Mixed Wool Bundle: 2D for 1 Stack",
+    "Wool (All Colors): 2D for 1 Stack"
   ]
 },
 

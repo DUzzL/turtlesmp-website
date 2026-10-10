@@ -1721,6 +1721,50 @@ window.SHOPS = [
     "Wool (All Colors): 2D for 1 Stack"
   ]
 },
+{
+  "name": "KON Shop",
+  "owner": "Konfuzius999",
+  "type": "general",
+  "location": "0, 150",
+  "tags": ["building-blocks", "wood", "valuables", "equipment", "enchanting", "mob-drops", "food", "travel"],
+  "items": [
+    "Acacia Logs: 2D for 1 Stack",
+    "Acacia Logs: 20D for 1 Shulker",
+    "Beacon: 9D for 1",
+    "Birch Logs: 2D for 1 Stack",
+    "Birch Logs: 20D for 1 Shulker",
+    "Bone Blocks: 2D for 1 Stack",
+    "Bone Blocks: 50D for 1 Shulker",
+    "Cherry Logs: 2D for 1 Stack",
+    "Cherry Logs: 20D for 1 Shulker",
+    "Dark Oak Logs: 2D for 1 Stack",
+    "Dark Oak Logs: 20D for 1 Shulker",
+    "Dirt: 1D for 5 Stacks",
+    "Dirt: 7D for 1 Shulker",
+    "Dirt: 6D per Shulker for 10 Shulkers",
+    "Elytra: 20D for 1",
+    "Golden Apple: 1D for 16",
+    "Mangrove Logs: 2D for 1 Stack",
+    "Mangrove Logs: 20D for 1 Shulker",
+    "Mangrove Roots: 1D for 1 Stack",
+    "Netherite Ingot: 45D for 1 (Limit: 2 per day)",
+    "Netherite Upgrade Copy: 3D for 1",
+    "Oak Logs: 2D for 1 Stack",
+    "Oak Logs: 20D for 1 Shulker",
+    "Ominous Key: 5D for 1",
+    "Pale Oak Logs: 2D for 1 Stack",
+    "Pale Oak Logs: 20D for 1 Shulker",
+    "Poplar Logs: 2D for 1 Stack",
+    "Poplar Logs: 20D for 1 Shulker",
+    "Rocket T3: 1D for 2 Stacks",
+    "Rocket T3: 13D for 1 Shulker",
+    "Shulker Shell: 1D for 1 Stack",
+    "Shulker Shell: 27D for 1 Stack (Limit: 1 per day)",
+    "Soul Speed III: 3D for 1",
+    "Spruce Logs: 2D for 1 Stack",
+    "Spruce Logs: 20D for 1 Shulker"
+  ]
+},
 
 
 

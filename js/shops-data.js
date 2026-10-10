@@ -1765,6 +1765,25 @@ window.SHOPS = [
     "Spruce Logs: 20D for 1 Shulker"
   ]
 },
+{
+  "name": "101 Pistons",
+  "owner": "DFZ_FDT",
+  "type": "general",
+  "location": "26, -44",
+  "tags": ["redstone", "building-blocks", "valuables"],
+  "items": [
+    "Ancient Debris: 12D for 1",
+    "Comparator: 8D for 1 Stack",
+    "Copper Golems: 4D for 32",
+    "Observer: 8D for 1 Stack",
+    "Piston: 4D for 1 Stack",
+    "Redstone Block: 8D for 1 Stack",
+    "Redstone Dust: 1D for 1 Stack",
+    "Redstone Torch: 1D for 1 Stack",
+    "Repeater: 4D for 1 Stack",
+    "Sticky Piston: 8D for 1 Stack"
+  ]
+},
 
 
 

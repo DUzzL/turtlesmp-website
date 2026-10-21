@@ -45,17 +45,7 @@ window.SHOPS = [
       "Ender Chest: 1D for 4"
     ]
   },
-  {
-    "name": "Bulk Shulker",
-    "owner": "Bekthul",
-    "type": "specialized",
-    "location": "-66, 121",
-    "tags": ["travel"],
-    "items": [
-      "Shulker Shells: 0 (Max 64)D for 1 Stack",
-      "Shulker Shells: 27D for 1 Shulker"
-    ]
-  },
+  
   {
     "name": "Creaking Head",
     "owner": "LinkSaga",
@@ -69,20 +59,7 @@ window.SHOPS = [
       "Resin Clump: 1D for 3 Stacks"
     ]
   },
-  {
-    "name": "Addi's Sniffer Shop",
-    "owner": "Addi_Stapolous",
-    "type": "specialized",
-    "location": "-100, 85",
-    "tags": ["nature"],
-    "items": [
-      "Pitcher Plant: 4D for 1 Stack",
-      "Pitcher Pod: 4D for 1 Stack",
-      "Sniffer Egg: 15D for 1",
-      "Torch Flower: 4D for 1 Stack",
-      "Torchflower Seed: 4D for 1 Stack"
-    ]
-  },
+  
   {
     "name": "Dragonna's Trim Shop",
     "owner": "TurtleAddict96 ",
@@ -148,28 +125,8 @@ window.SHOPS = [
       "Verdant Froglight: 1D for 1 Stack"
     ]
   },
-  {
-    "name": "Giant Slime",
-    "owner": "ReddieOni",
-    "type": "specialized",
-    "location": "19, -64",
-    "tags": ["mob-drops", "redstone"],
-    "items": [
-      "Slime Blocks: 3D for 1 Stack"
-    ]
-  },
-  {
-    "name": "Giant Slime Basement",
-    "owner": "ReddieOni",
-    "type": "specialized",
-    "location": "19, -64",
-    "tags": ["building-blocks"],
-    "items": [
-      "Coarse Dirt: 1D for 4 Stacks",
-      "Dirt: 1D for 6 Stacks",
-      "Mud: 1D for 2 Stacks"
-    ]
-  },
+  
+  
   {
     "name": "Horn Store",
     "owner": "LinkSaga ",
@@ -521,24 +478,7 @@ window.SHOPS = [
     "Wildflowers: 9D for 1 Shulker"
   ]
   },
-  {
-    "name": "The Pirates",
-    "owner": "Kush_XD",
-    "type": "general",
-    "location": "-25, 131",
-    "tags": ["building-blocks", "brewing", "decoration", "nature"],
-    "items": [
-      "Waxed Copper: 3D for 1 Stack",
-      "Random Copper: 1D for 8",
-      "Random Potions: 2D for 1",
-      "Sponge: 4D for 1",
-      "Misc Items: 3D for 1",
-      "Heads: 1D for 1",
-      "Misc Armour Trims: 10D for 1",
-      "Special Heads: 12D for 1",
-      "Decorated Pot: 1D for 3"
-    ]
-  },
+  
   {
     "name": "The Skulk Emporium",
     "owner": "Kush_XD",
@@ -751,19 +691,7 @@ window.SHOPS = [
       "Tuff: 4D for 1 Stack"
     ]
   },
-  {
-    "name": "Silver, Sora & Bek's Raw Iron Stall",
-    "owner": "Silver, Sora, Bek",
-    "type": "specialized",
-    "location": "34, -9",
-    "tags": ["building-blocks"],
-    "items": [
-      "Raw Iron: Give 16 for 1D",
-      "Raw Iron: Give 32 for 2D",
-      "Raw Iron: Give 48 for 3D",
-      "Raw Iron: Give 64 for 4D"
-    ]
-  },
+  
   {
     "name": "Brolympus",
     "owner": "TunaBeef",
@@ -910,16 +838,7 @@ window.SHOPS = [
       "Redstone Ore: 6D for 32"
     ]
   },
-  {
-    "name": "Interesting’s Netherite",
-    "owner": "Interesting",
-    "type": "specialized",
-    "location": "51, 0",
-    "tags": ["valuables"],
-    "items": [
-      "Netherite Ingot: 48D for 1"
-    ]
-  },
+  
   {
     "name": "Conduit Coleoid's Corals",
     "owner": "samom37",
@@ -1018,32 +937,8 @@ window.SHOPS = [
       "String: 4D for 1 Shulker"
     ]
   },
-  {
-    "name": "The Proud Freaks",
-    "owner": "SandraBaroness",
-    "type": "specialized",
-    "location": "32, -83",
-    "tags": ["decoration"],
-    "items": [
-      "Pride Banners: 4D for 1"
-    ]
-  },
-  {
-    "name": "Sniffie's Garden",
-    "owner": "SandraBaroness",
-    "type": "specialized",
-    "location": "-101, 88",
-    "tags": ["nature", "decoration"],
-    "items": [
-      "Pitcher Plants: 4D for 1 Stack",
-      "Pitcher Pods: 4D for 1 Stack",
-      "Small Drip Leaf: 2D for 1",
-      "Sniffer Eggs: 15D for 1",
-      "Spore Blossoms: 3D for 1",
-      "Torchflower Seeds: 4D for 1 Stack",
-      "Torchflowers: 4D for 1 Stack"
-    ]
-  },
+  
+  
   {
     "name": "Rex’s Ranch",
     "owner": "MambasaurusRex",
@@ -1564,23 +1459,7 @@ window.SHOPS = [
     "Shroomlights: 2D for 1 Stack"
   ]
 },
-{
-  "name": "Cherry Hideout",
-  "owner": "RoaringLugia",
-  "type": "general",
-  "location": "-35, 93",
-  "tags": ["decoration", "mob-drops", "nature", "travel"],
-  "items": [
-    "Coloured Shulkers: 1D for 3",
-    "Decoration Pack: 1D for 1",
-    "Enchanted Elytra: 20D for 1",
-    "Pink Petals: 1D for 32",
-    "Slime (1 in Boat + Lead): 2D for 1",
-    "Slimes (2 in Boat + Lead): 4D for 1",
-    "Tree Bundle: 1D for 1",
-    "Wither Skeleton Skulls: 6D for 3"
-  ]
-},
+
 {
   "name": "Treasures from the North",
   "owner": "Keysnail",
@@ -1863,3 +1742,4 @@ window.SHOPS = [
     ]
   }
 ]
+

@@ -553,20 +553,29 @@ window.SHOPS = [
     ]
   },
   {
-  "name": "Train Shop",
-  "owner": "DarkCows",
-  "type": "general",
-  "location": "-80, 20",
-  "tags": ["mob-drops", "building-blocks", "enchanting", "valuables"],
-  "items": [
-    "Coal Blocks: 1D for 1 Stack",
-    "Diamonds: 1 Ancient Debris for 16",
-    "Obsidian: 4D for 1 Shulker",
-    "Slime: 56D for 1 Shulker",
-    "String: 4D for 1 Shulker",
-    "Swift Sneak III: 16D for 1",
-    "Music Disc - Otherside: 16D for 1"
-   ]
+    "name": "Train Shop",
+    "owner": "DarkCows",
+    "type": "general",
+    "location": "-80, 20",
+    "tags": [
+      "mob-drops",
+      "building-blocks",
+      "enchanting",
+      "valuables",
+      "food",
+      "redstone"
+    ],
+    "items": [
+      "Coal Blocks: 1D for 1 Stack",
+      "Diamonds: 1 Ancient Debris for 16",
+      "Obsidian: 4D for 1 Shulker",
+      "Slime: 56D for 1 Shulker",
+      "String: 4D for 1 Shulker",
+      "Swift Sneak III: 16D for 1",
+      "Music Disc - Otherside: 16D for 1",
+      "Cooked Chicken: 1D for 9 Stacks",
+      "Rails (All Types): 1D for 1 Shulker"
+    ]
   },
   {
     "name": "Wither Skull",
@@ -770,12 +779,13 @@ window.SHOPS = [
     "owner": "Star Crop",
     "type": "general",
     "location": "40, 33",
-    "tags": ["general"],
+    "tags": [
+      "general"
+    ],
     "items": [
       "Armor: 2D for 1",
       "Golden Carrots: 1D for 2 Stacks",
       "Gunpowder: 2D for 1 Stack",
-      "Potions: 3D for 1",
       "T1 Rockets: 1D for 6 Stacks",
       "T2 Rockets: 1D for 4 Stacks",
       "T3 Rockets: 1D for 3 Stacks",
@@ -791,7 +801,11 @@ window.SHOPS = [
     "owner": "Poidragon",
     "type": "general",
     "location": "-132, 230",
-    "tags": ["mob-drops", "enchanting", "redstone"],
+    "tags": [
+      "mob-drops",
+      "enchanting",
+      "redstone"
+    ],
     "items": [
       "Trident (Non-Enchanted): 5D for 1",
       "Loyalty III Book: 2D for 1",
@@ -803,9 +817,11 @@ window.SHOPS = [
       "Turtle Eggs: 5D for 2",
       "Redstone Block: 1D for 16",
       "Rent a working bee to do stuff for you",
-	    "Enchanted Trident: 8D for 1",
-	    "Bottle o' Enchanting: 1D for 32",
-      "Golden Carrots: 1D for 2 Stack"
+      "Enchanted Trident: 8D for 1",
+      "Bottle o' Enchanting: 1D for 32",
+      "Golden Carrots: 1D for 2 Stack",
+      "Breeze Rods: 2D for 16",
+      "Ominous Trial Key: 5D for 1"
     ]
   },
   {
@@ -866,28 +882,31 @@ window.SHOPS = [
     ]
   },
   {
-  "name": "The Ore Store",
-  "owner": "Tina1230",
-  "type": "specialized",
-  "location": "-62, -54",
-  "tags": ["building-blocks", "valuables"],
-  "items": [
-    "Ancient Debris: 20D for 1",
-    "Coal Ore: 2D for 1 Stack",
-    "Copper Ore: 4D for 32",
-    "Deepslate Copper Ore: 2D for 16",
-    "Deepslate Emerald Ore: 450D for 1",
-    "Deepslate Gold Ore: 2D for 16",
-    "Deepslate Iron Ore: 2D for 16",
-    "Deepslate Lapis Ore: 2D for 32",
-    "Deepslate Redstone Ore: 1D for 32",
-    "Diamond Ore: 8D for 1",
-    "Emerald Ore: 8D for 1",
-    "Gold Ore: 4D for 32",
-    "Iron Ore: 6D for 1 Stack",
-    "Lapis Ore: 4D for 32",
-    "Nether Gold Ore: 2D for 16",
-    "Nether Quartz Ore: 3D for 32",
+    "name": "The Ore Store",
+    "owner": "Tina1230",
+    "type": "specialized",
+    "location": "-62, -54",
+    "tags": [
+      "building-blocks",
+      "valuables"
+    ],
+    "items": [
+      "Ancient Debris: 16D for 1",
+      "Coal Ore: 2D for 1 Stack",
+      "Copper Ore: 4D for 32",
+      "Deepslate Copper Ore: 2D for 16",
+      "Deepslate Emerald Ore: 450D for 1",
+      "Deepslate Gold Ore: 2D for 16",
+      "Deepslate Iron Ore: 2D for 16",
+      "Deepslate Lapis Ore: 2D for 32",
+      "Deepslate Redstone Ore: 1D for 32",
+      "Diamond Ore: 8D for 1",
+      "Emerald Ore: 8D for 1",
+      "Gold Ore: 4D for 32",
+      "Iron Ore: 6D for 1 Stack",
+      "Lapis Ore: 4D for 32",
+      "Nether Gold Ore: 2D for 16",
+      "Nether Quartz Ore: 3D for 32",
       "Redstone Ore: 6D for 32"
     ]
   },
@@ -1686,19 +1705,23 @@ window.SHOPS = [
   ]
 },
 {
-  "name": "Bamboo Barn",
-  "owner": "JMDnix",
-  "type": "specialized",
-  "location": "-43, 6",
-  "tags": ["wood", "building-blocks", "nature"],
-  "items": [
-    "Bamboo Blocks: 36D for 1 Shulker",
-    "Bamboo Mosaic: 18D for 1 Shulker",
-    "Bamboo Planks: 18D for 1 Shulker",
-    "Bamboo Shoots: 4D for 1 Shulker",
-    "Scaffolding: 1D for 1 Stack"
-  ]
-},
+    "name": "Bamboo Barn",
+    "owner": "JMDnix",
+    "type": "specialized",
+    "location": "-43, 6",
+    "tags": [
+      "wood",
+      "building-blocks",
+      "nature"
+    ],
+    "items": [
+      "Bamboo Blocks: 36D for 1 Shulker",
+      "Bamboo Mosaic: 18D for 1 Shulker",
+      "Bamboo Planks: 18D for 1 Shulker",
+      "Bamboo Shoots: 4D for 1 Shulker",
+      "Scaffolding: 20D for 1 Shulker"
+    ]
+  },
 {
   "name": "badoinkaz' bazaar",
   "owner": "badoinkaz",
@@ -1784,16 +1807,59 @@ window.SHOPS = [
     "Sticky Piston: 8D for 1 Stack"
   ]
 },
-
-
-
-
-   
-  
-  
-  
-  
-  
-  
-  
+  {
+    "name": "The Riches of Prunrose",
+    "owner": "MysticScarab660",
+    "type": "specialized",
+    "location": "22, 6",
+    "tags": [
+      "valuables"
+    ],
+    "items": [
+      "Ancient Debris: 12D for 1",
+      "Ancient Debris: 243D for 27 (27 Diamond Blocks, in 1 Shulker)",
+      "Netherite Ingot: 40D for 1"
+    ]
+  },
+  {
+    "name": "Ray's Pride Banners",
+    "owner": "milkywonderhoy",
+    "type": "specialized",
+    "location": "29, 6",
+    "tags": [
+      "decoration"
+    ],
+    "items": [
+      "Lesbian Banner: 1D for 1",
+      "Nonbinary Banner: 1D for 1",
+      "MLM Banner: 1D for 1",
+      "Ace Banner: 1D for 1",
+      "Agender Banner: 1D for 1",
+      "Aromantic Banner: 1D for 1",
+      "Pansexual Banner: 1D for 1",
+      "Bisexual Banner: 1D for 1",
+      "Basic Pride Banner: 1D for 1",
+      "Transgender Banner: 1D for 1",
+      "Transfem Banner: 1D for 1",
+      "Transmasc Banner: 1D for 1"
+    ]
+  },
+  {
+    "name": "Ray's Honey",
+    "owner": "milkywonderhoy",
+    "type": "specialized",
+    "location": "25, -82",
+    "tags": [
+      "food",
+      "nature",
+      "building-blocks"
+    ],
+    "items": [
+      "Honeycomb: 1D for 32",
+      "Honeycomb Block: 4D for 1 Stack",
+      "Honey Bottle: 1D for 16",
+      "Full Beehive (3 Bees): 2D for 1",
+      "Honey Block: 2D for 32"
+    ]
+  }
 ]

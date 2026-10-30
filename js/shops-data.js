@@ -1682,5 +1682,37 @@ window.SHOPS = [
       "Full Beehive (3 Bees): 2D for 1",
       "Honey Block: 2D for 32"
     ]
+  },
+  {
+    "name": "New CooCooLand Frontier Supply",
+    "owner": "DaddyAKicker, 4x4Ninja, Pet_Lover3",
+    "type": "general",
+    "location": "-43, 96, -80 (Lower level of the mall)",
+    "tags": [
+      "general",
+      "travel",
+      "building-blocks",
+      "food",
+      "mob-drops",
+      "equipment",
+      "valuables",
+      "decoration"
+    ],
+    "items": [
+      "T3 Rockets: 1D for 2 Stacks",
+      "Leads: 1D for 32",
+      "Lanterns: 2D for 1 Stack",
+      "Cobblestone: 1D for 2 Stacks",
+      "Stone: 1D for 3 Stacks",
+      "Saddles: 1D for 3",
+      "Emerald Blocks: 1D for 16",
+      "Cooked Chicken: 1D for 9 Stacks",
+      "Bones: 1D for 1 Stack",
+      "Wolf Armor: 1D for 1",
+      "Turtle Scutes: 3D for 2",
+      "Straw Beds: 1D for 8",
+      "Spyglass: 2D for 1",
+      "Compass: 1D for 1"
+    ]
   }
 ];

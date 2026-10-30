@@ -10,130 +10,51 @@
 <link rel="preload" as="image" href="../img/logo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Press+Start+2P&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=7">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css?v=9">
 <script src="../js/theme.js"></script>
-<style>
-  .donate-wrap {
-    max-width: 680px;
-    margin: 0 auto;
-    text-align: center;
-  }
 
-  .donate-notice {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    background: var(--amber-fill);
-    border: 1px solid rgba(251, 191, 36, 0.3);
-    border-radius: var(--radius);
-    padding: 18px 22px;
-    font-size: 14px;
-    color: var(--text-dim);
-    line-height: 1.65;
-    margin-bottom: 40px;
-    text-align: left;
-  }
-
-  .donate-notice-icon {
-    font-size: 24px;
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
-
-  .donate-notice strong {
-    color: var(--text);
-  }
-
-  .kofi-container {
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    overflow: hidden;
-  }
-
-  .kofi-container iframe {
-    display: block;
-    border: none;
-    width: 100%;
-    height: 712px;
-  }
-</style>
+<noscript><style>@media(max-width:850px){.nav{display:flex}.nav-toggle{display:none}}</style></noscript>
 </head>
 <body>
 
-<header class="topbar">
-  <div class="topbar-inner">
-    <a href="../index.html" class="brand">
-      <img src="../img/logo.webp" alt="Turtle SMP logo">
-      <div>
-        <div class="wordmark">TURTLE SMP</div>
-        <div class="tagline">Vanilla survival</div>
+<header class="topbar"><div class="topbar-inner">
+<a class="brand" href="../index.html"><img src="../img/logo.webp" alt=""><span>Turtle SMP<small>Vanilla survival</small></span></a>
+<button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+<nav class="nav" id="nav" aria-label="Main navigation">
+<a class="nav-link " href="../index.html">Home</a><a class="nav-link " href="../rules/">Rules</a><a class="nav-link " href="../stats/">Statistics</a><a class="nav-link " href="../shops/">Shop District</a><a class="nav-link nav-donate active" href="../donate/">Donate</a>
+<a class="nav-link nav-map" href="https://map.turtle-smp.com" target="_blank" rel="noopener">Bluemap <span class="external-arrow" aria-hidden="true">↗</span></a><a class="nav-link nav-join discord-link" href="https://discord.gg/xs5PDwnJxw" target="_blank" rel="noopener">Join Discord <span class="external-arrow" aria-hidden="true">↗</span></a></nav>
+<div class="topbar-actions"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme"></button><a class="btn btn-primary discord-link" href="https://discord.gg/xs5PDwnJxw" target="_blank" rel="noopener">Join Discord <span class="external-arrow" aria-hidden="true">↗</span></a></div></div></header>
+
+<main class="page-layout donate-page">
+  <div class="donate-layout">
+    <div class="donate-copy">
+      <section class="page-intro" aria-labelledby="donate-title">
+        <div class="page-intro-copy">
+          <h1 id="donate-title">Donations for server hosting</h1>
+          <p>Running Turtle SMP comes with costs for server hosting, the domain and related services. If you enjoy the server and have some to spare, we'd really appreciate a donation. You can do a single donation or set up a monthly payment!</p>
+        </div>
+      </section>
+
+      <div class="donate-note">
+        <p><strong>Please only donate if you genuinely want to and can comfortably afford it.</strong></p>
+        <p>Support is entirely optional. It doesn't grant perks, ranks, or any advantages on the server. You're wonderful either way!</p>
       </div>
-    </a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav" id="nav">
-      <a href="../index.html" class="nav-link">Home</a>
-      <a href="../rules/" class="nav-link">Rules</a>
-      <a href="../stats/" class="nav-link">Statistics</a>
-      <a href="../shops/" class="nav-link">Shop District</a>
-      <a href="../donate/" class="nav-link nav-link-gold active">Donate</a>
-    </nav>
-    <div class="topbar-actions">
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
-      <a href="https://map.turtle-smp.com" target="_blank" rel="noopener" class="btn btn-amber">Bluemap</a>
-      <a href="#" target="_blank" rel="noopener" class="btn btn-blurple discord-link">Discord</a>
-    </div>
-  </div>
-</header>
-
-<main>
-  <div class="donate-wrap">
-
-    <div class="section-head reveal">
-      <div class="section-eyebrow">SUPPORT US</div>
-      <h1 class="section-title">Donations for server hosting</h1>
-      <p class="section-sub">Running Turtle SMP costs time and money. If you enjoy the server and have some to spare, we'd really appreciate a donation. You can do a single donation or set up a monthly payment!</p>
     </div>
 
-    <div class="donate-notice reveal">
-      <span class="donate-notice-icon">💛</span>
-      <span>
-        <strong>Please only donate if you genuinely want to and can comfortably afford it.</strong>
-        Support is entirely optional. It doesn't unlock perks, ranks, or any advantages on the server. You're wonderful either way!
-      </span>
-    </div>
-
-    <div class="kofi-container reveal">
+    <div class="kofi-container">
       <iframe
         id="kofiframe"
-        src="https://ko-fi.com/turtlesmp/?hidefeed=true&widget=true&embed=true&preview=true"
+        src="https://ko-fi.com/turtlesmp/?hidefeed=true&amp;widget=true&amp;embed=true&amp;preview=true"
         title="Support Turtle SMP on Ko-Fi"
         loading="lazy"
       ></iframe>
     </div>
-
   </div>
+<section class="vote-section" aria-labelledby="vote-title"><h2 id="vote-title">Help us grow</h2><p>Vote for Turtle SMP on your favourite server list. Voting is optional and has no in-game rewards.</p><div class="vote-actions"><a href="https://findmcserver.com/server/xapros" target="_blank" rel="noopener">Find MC Server <span aria-hidden="true">↗</span></a><a href="https://minecraft-server-list.com/server/510169/" target="_blank" rel="noopener">Minecraft Server List <span aria-hidden="true">↗</span></a><a href="https://minecraft-mp.com/server-s340890" target="_blank" rel="noopener">Minecraft MP <span aria-hidden="true">↗</span></a><a href="https://www.planetminecraft.com/server/xapros-smp-6644646/" target="_blank" rel="noopener">Planet Minecraft <span aria-hidden="true">↗</span></a></div></section>
 </main>
 
-<footer class="footer">
-  <div class="footer-inner">
-    <div>
-      © Turtle SMP · running on fabric · <code>turtle-smp.com</code>
-      <div class="disclaimer">Not affiliated with Mojang AB or Microsoft.</div>
-    </div>
-    <div class="footer-links">
-      <a href="https://map.turtle-smp.com" target="_blank" rel="noopener">Bluemap</a>
-      <a href="#" target="_blank" rel="noopener" class="discord-link">Discord</a>
-      <a href="../index.html">Home</a>
-      <a href="../rules/">Rules</a>
-      <a href="../shops/">Shops</a>
-      <a href="../privacy/">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
+<footer class="footer"><div class="footer-inner"><div><p>Not affiliated with Mojang AB or Microsoft.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="../rules/">Rules</a><a href="../stats/">Statistics</a><a href="../shops/">Shop District</a><a href="../donate/">Donate</a><a href="https://map.turtle-smp.com" target="_blank" rel="noopener">Bluemap <span class="external-arrow" aria-hidden="true">↗</span></a><a href="https://discord.gg/xs5PDwnJxw" target="_blank" rel="noopener" class="discord-link">Discord <span class="external-arrow" aria-hidden="true">↗</span></a></nav></div></footer>
 
 <script src="../js/config.js"></script>
 <script src="../js/nav.js"></script>

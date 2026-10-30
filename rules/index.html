@@ -10,49 +10,42 @@
 <link rel="preload" as="image" href="../img/logo.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Press+Start+2P&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/styles.css?v=7">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css?v=9">
 <script src="../js/theme.js"></script>
+<noscript><style>@media(max-width:850px){.nav{display:flex}.nav-toggle{display:none}}</style></noscript>
 </head>
 <body>
 
-<header class="topbar">
-  <div class="topbar-inner">
-    <a href="../index.html" class="brand">
-      <img src="../img/logo.webp" alt="Turtle SMP logo">
-      <div>
-        <div class="wordmark">TURTLE SMP</div>
-        <div class="tagline">Vanilla survival</div>
-      </div>
-    </a>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav" id="nav">
-      <a href="../index.html" class="nav-link">Home</a>
-      <a href="../rules/" class="nav-link active">Rules</a>
-      <a href="../stats/" class="nav-link">Statistics</a>
-      <a href="../shops/" class="nav-link">Shop District</a>
-      <a href="../donate/" class="nav-link nav-link-gold">Donate</a>
-    </nav>
-    <div class="topbar-actions">
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
-      <a href="https://map.turtle-smp.com" target="_blank" rel="noopener" class="btn btn-amber">Bluemap</a>
-      <a href="#" target="_blank" rel="noopener" class="btn btn-blurple discord-link">Discord</a>
-    </div>
-  </div>
-</header>
+<header class="topbar"><div class="topbar-inner">
+<a class="brand" href="../index.html"><img src="../img/logo.webp" alt=""><span>Turtle SMP<small>Vanilla survival</small></span></a>
+<button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+<nav class="nav" id="nav" aria-label="Main navigation">
+<a class="nav-link " href="../index.html">Home</a><a class="nav-link active" href="../rules/">Rules</a><a class="nav-link " href="../stats/">Statistics</a><a class="nav-link " href="../shops/">Shop District</a><a class="nav-link nav-donate" href="../donate/">Donate</a>
+<a class="nav-link nav-map" href="https://map.turtle-smp.com" target="_blank" rel="noopener">Bluemap <span class="external-arrow" aria-hidden="true">↗</span></a><a class="nav-link nav-join discord-link" href="https://discord.gg/xs5PDwnJxw" target="_blank" rel="noopener">Join Discord <span class="external-arrow" aria-hidden="true">↗</span></a></nav>
+<div class="topbar-actions"><button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme"></button><a class="btn btn-primary discord-link" href="https://discord.gg/xs5PDwnJxw" target="_blank" rel="noopener">Join Discord <span class="external-arrow" aria-hidden="true">↗</span></a></div></div></header>
 
 <main>
 
-  <div class="section-head reveal">
-    <div class="section-eyebrow">OUR RULES</div>
+  <div class="section-head rules-intro reveal">
     <h1 class="section-title">Welcome to Turtle SMP!</h1>
     <p class="section-sub">Of course we have to follow some rules so everyone has a good time on our server. They aren't restrictive, you probably won't find surprises here. Please still take your time to read them before applying to the server.</p>
   </div>
 
-  <section class="rules-section reveal">
-    <h2><span class="num">01</span> Social rules</h2>
+  <div class="rules-layout">
+    <nav class="rules-index" aria-label="On this page">
+      <span class="rules-index-title">On this page</span>
+      <a href="#social-rules">Social rules</a>
+      <a href="#minecraft-rules">General Minecraft rules</a>
+      <a href="#shopping-rules">Spawn / Shopping District rules</a>
+      <a href="#nether-end-rules">Nether &amp; End rules</a>
+      <a href="#important">Important!</a>
+      <a href="#datapacks-mods">Datapacks &amp; Mods</a>
+      <a href="#extra-info">Extra info</a>
+    </nav>
+    <div class="rules-content">
+  <section class="rules-section reveal" id="social-rules">
+    <h2>Social rules</h2>
     <ul class="rules-list">
       <li>Discrimination, harassment and similar <strong>are not tolerated</strong> here. Respect your fellow players. We are a safe place, people trying to destroy that will be banned.</li>
 	  <li>While we allow casual swearing, we do not permit the discussion of sexual or drug related topics. We also ask you to keep political discussions to a minimum.</li>
@@ -61,14 +54,14 @@
     </ul>
   </section>
 
-  <section class="rules-section reveal">
-    <h2><span class="num">02</span> General Minecraft rules</h2>
+  <section class="rules-section reveal" id="minecraft-rules">
+    <h2>General Minecraft rules</h2>
     <ul class="rules-list">
       <li>We don't allow <strong>griefing</strong> (destroying others' builds), <strong>cheating</strong> (mods or hacked clients to gain an advantage) and <strong>stealing</strong>. Don't use other people's farms without their permission.</li>
       <li class="warn">We explicitly highlight that <strong>X-RAY</strong> (making non transparent block transparent) will get you banned. Using the seed, lava transperancy etc to find ores is also considered X-Ray, you will still be banned.</li>
       <li>You <strong>are allowed to dupe</strong> TNT, sand/concrete/gravel, carpets and rails. This is used for many farms, that's why we allow it.</li>
       <li>The focus of our server is not PVP, but we don't ban it. Only fight other people after explicit consent. When someone dies, collect their items for them.</li>
-      <li><a href="https://docs.google.com/spreadsheets/d/1FR8v4QDxXymTAvrW_zDV4--UFqGR2DoRTob9UkEi96o/edit?gid=0#gid=0" target="_blank" rel="noopener">See the list of allowed and disallowed mods →</a> If you have a question, don't hesitate to ask.</li>
+      <li><a href="https://docs.google.com/spreadsheets/d/1FR8v4QDxXymTAvrW_zDV4--UFqGR2DoRTob9UkEi96o/edit?gid=0#gid=0" target="_blank" rel="noopener">See the list of allowed and disallowed mods</a> If you have a question, don't hesitate to ask.</li>
       <li>Please do your part in helping server performance. We don't have any limits on the farms you can build, but we do ask you limit the amount of animals and unnecessary redstone. <strong>Only use chunkloaders when absolutely necessary</strong>, they are not allowed to just keep farms loaded.</li>
 	  <li>Lazy chunk <strong>TNT contraptions</strong> like some mining machines are not allowed.</li>
       <li>Mark your <strong>bases and farms</strong> with signs so we can tell who owns them!</li>
@@ -78,8 +71,8 @@
     <p class="lede" style="margin-top:14px">These rules are subject to change. Please check them from time to time.</p>
   </section>
 
-  <section class="rules-section reveal">
-    <h2><span class="num">03</span> Spawn / Shopping District rules</h2>
+  <section class="rules-section reveal" id="shopping-rules">
+    <h2>Spawn / Shopping District rules</h2>
     <ul class="rules-list">
       <li>Spawn is a <strong>communal space</strong>, it cannot be used for personal bases or storages. Major changes need to be approved by staff.</li>
 	    <li>Keep entities and redstone to a minimum. Always remember that not everyone has the best hardware. We are doing this to help their FPS.</li>
@@ -88,14 +81,14 @@
 	    <li>The builds have to be fitting. Low effort or oversized builds are not allowed and might be removed. In doubt open a ticket.</li>
 	    <li>Shops need to have a sign listing the shops name, the owners name and the date of creation. That makes it easier to identify them.</li>
 	    <li>You are <strong>not allowed to undercut</strong> other shops' prices. We don't want the shopping district to ruin the server economy.</li>
-	    <li>To find items in the shopping district, use the <a href="../shops/" rel="noopener">search engine on our website →</a> To submit your own shop, open a ticket and list the shop's name, location, owners, items sold and prices.</li>
+	    <li>To find items in the shopping district, use the <a href="../shops/" rel="noopener">search engine on our website</a> To submit your own shop, open a ticket and list the shop's name, location, owners, items sold and prices.</li>
 	    <li>While general shops are allowed, specialized shops will be listed first in the search engine. They also have the right to offer a big amount of items at a discount of 25%.</li>
       <li>You cannot sell <strong>gunpowder or TNT</strong> directly in shops. In person sales are allowed.</li>
     </ul>
   </section>
 
-  <section class="rules-section reveal">
-    <h2><span class="num">04</span> Nether & End rules</h2>
+  <section class="rules-section reveal" id="nether-end-rules">
+    <h2>Nether & End rules</h2>
     <ul class="rules-list">
       <li>You are strongly encouraged to build <strong>Nether Highways</strong> to connect your bases. They are a great way to travel to other parts of the world.</li>
       <li>You are allowed to use the Nether roof for building farms, but not for normal builds. You are <strong>not</strong> allowed to build infrastructure on it.</li>
@@ -110,8 +103,8 @@
 
 
 
-    <section class="rules-section reveal">
-    <h2><span class="num">05</span> Important!</h2>
+    <section class="rules-section reveal" id="important">
+    <h2>Important!</h2>
     <ul class="rules-list">
 		<li>If you are unsure about something, <strong>open a Discord ticket</strong> and ask us about it!</li>
 		<li>Trying to get around the rules is not going to save you!</li>
@@ -119,8 +112,8 @@
 	   </ul>
 	  </section>
 
-  <section class="rules-section reveal">
-    <h2><span class="num">06</span> Datapacks &amp; Mods</h2>
+  <section class="rules-section reveal" id="datapacks-mods">
+    <h2>Datapacks &amp; Mods</h2>
     <p class="lede">Our server runs on <strong>Fabric</strong>. That's a modloader for servers that keeps the game vanilla, unlike Paper or Spigot. We chose to improve vanilla gameplay and performance a bit, with the following datapacks and mods.</p>
 
     <h3>Vanilla Tweaks</h3>
@@ -150,8 +143,8 @@
     <p class="lede" style="margin-top:18px"><strong>Fire Tick is off.</strong> Fires won't spread or go out without a player putting them out.</p>
   </section>
 
-  <section class="rules-section reveal">
-    <h2><span class="num">07</span> Extra info</h2>
+  <section class="rules-section reveal" id="extra-info">
+    <h2>Extra info</h2>
     <ul class="info-grid">
       <li class="info-card">
         <div class="key">Tab list number</div>
@@ -159,7 +152,7 @@
       </li>
       <li class="info-card">
         <div class="key">Nether hub</div>
-        <div class="val">Y=115 · X=0 · Z=0</div>
+        <div class="val">Y=115, X=0, Z=0</div>
       </li>
       <li class="info-card">
         <div class="key">Restarting</div>
@@ -180,38 +173,15 @@
     </ul>
   </section>
 
-  <section class="rules-section reveal">
-    <div class="vote-block">
-      <h3>Help us grow 💜</h3>
-      <p>To achieve Turtle SMP world domination, we need your daily votes. We don't give rewards for voting, but we'd appreciate the help.</p>
-      <div class="vote-actions">
-		<a href="https://findmcserver.com/server/xapros" target="_blank" rel="noopener" class="btn btn-violet">Vote 1</a>
-        <a href="https://minecraft-server-list.com/server/510169/" target="_blank" rel="noopener" class="btn btn-violet">Vote 2</a>
-        <a href="https://minecraft-mp.com/server-s340890" target="_blank" rel="noopener" class="btn btn-violet">Vote 3</a>
-		<a href="https://www.planetminecraft.com/server/xapros-smp-6644646/" target="_blank" rel="noopener" class="btn btn-violet">Vote 4</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="footer-inner">
-    <div>
-      © Turtle SMP · running on fabric · <code>turtle-smp.com</code>
-      <div class="disclaimer">Not affiliated with Mojang AB or Microsoft.</div>
-    </div>
-    <div class="footer-links">
-      <a href="https://map.turtle-smp.com" target="_blank" rel="noopener">Bluemap</a>
-      <a href="#" target="_blank" rel="noopener" class="discord-link">Discord</a>
-      <a href="../index.html">Home</a>
-      <a href="../shops/">Shops</a>
-	  <a href="../privacy/">Privacy Policy</a>
     </div>
   </div>
-</footer>
+<section class="vote-section" aria-labelledby="vote-title"><h2 id="vote-title">Help us grow</h2><p>Vote for Turtle SMP on your favourite server list. Voting is optional and has no in-game rewards.</p><div class="vote-actions"><a href="https://findmcserver.com/server/xapros" target="_blank" rel="noopener">Find MC Server <span aria-hidden="true">↗</span></a><a href="https://minecraft-server-list.com/server/510169/" target="_blank" rel="noopener">Minecraft Server List <span aria-hidden="true">↗</span></a><a href="https://minecraft-mp.com/server-s340890" target="_blank" rel="noopener">Minecraft MP <span aria-hidden="true">↗</span></a><a href="https://www.planetminecraft.com/server/xapros-smp-6644646/" target="_blank" rel="noopener">Planet Minecraft <span aria-hidden="true">↗</span></a></div></section>
+</main>
+
+<footer class="footer"><div class="footer-inner"><div><p>Not affiliated with Mojang AB or Microsoft.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="../rules/">Rules</a><a href="../stats/">Statistics</a><a href="../shops/">Shop District</a><a href="../donate/">Donate</a><a href="https://map.turtle-smp.com" target="_blank" rel="noopener">Bluemap <span class="external-arrow" aria-hidden="true">↗</span></a><a href="https://discord.gg/xs5PDwnJxw" target="_blank" rel="noopener" class="discord-link">Discord <span class="external-arrow" aria-hidden="true">↗</span></a></nav></div></footer>
 
 <script src="../js/config.js"></script>
 <script src="../js/nav.js"></script>
+<script src="../js/rules-navigation.js"></script>
 </body>
 </html>

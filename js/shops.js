@@ -62,7 +62,9 @@
     });
 
     filtered.sort((a, b) => {
-      if (a.type !== b.type) return a.type === 'specialized' ? -1 : 1;
+      const priority = { specialized: 0, general: 1 };
+      const typeOrder = (priority[a.type] ?? 2) - (priority[b.type] ?? 2);
+      if (typeOrder) return typeOrder;
       return a.name.localeCompare(b.name);
     });
 
@@ -75,8 +77,9 @@
     shopEmpty.style.display = 'none';
 
     const specCount = filtered.filter(s => s.type === 'specialized').length;
-    const genCount = filtered.length - specCount;
-    resultsCount.innerHTML = `<strong>${filtered.length}</strong> shop${filtered.length === 1 ? '' : 's'} · ${specCount} specialized, ${genCount} general`;
+    const genCount = filtered.filter(s => s.type === 'general').length;
+    const unknownCount = filtered.length - specCount - genCount;
+    resultsCount.innerHTML = `<strong>${filtered.length}</strong> shop${filtered.length === 1 ? '' : 's'} · ${specCount} specialized, ${genCount} general${unknownCount ? `, ${unknownCount} unspecified` : ''}`;
 
     filtered.forEach(s => {
       const card = document.createElement('div');
@@ -89,11 +92,11 @@
       card.innerHTML = `
         <div class="shop-head">
           <div class="shop-name">${highlight(s.name, q)}</div>
-          <div class="shop-badge ${s.type === 'specialized' ? 'badge-spec' : 'badge-gen'}">${s.type}</div>
+          <div class="shop-badge ${s.type === 'specialized' ? 'badge-spec' : 'badge-gen'}">${s.type ? escape(s.type) : 'Type not specified'}</div>
         </div>
         <div class="shop-meta">
           <div class="row"><span class="key">Owner</span><span class="owner">${highlight(s.owner, q)}</span></div>
-          <div class="row"><span class="key">At</span><span>${escape(s.location)}</span></div>
+          <div class="row"><span class="key">At</span><span>${s.location.trim() ? escape(s.location) : 'Not specified'}</span></div>
           <div class="row"><span class="key">Tags</span><div class="shop-tags">${s.tags.map(t => `<span class="shop-tag">${highlight(t, q)}</span>`).join('')}</div></div>
         </div>
         <div class="shop-items">

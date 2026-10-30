@@ -21,6 +21,8 @@
   const empty = document.getElementById('stats-empty');
   const loading = document.getElementById('stats-loading');
   const errorEl = document.getElementById('stats-error');
+  const tableWrap = document.getElementById('stats-table-wrap');
+  const retryButton = document.getElementById('stats-retry');
   const resultsCount = document.getElementById('results-count');
   const updatedEl = document.getElementById('stats-updated');
   const statPlayers = document.getElementById('stat-players');
@@ -31,8 +33,9 @@
 
   // ── State ──────────────────────────────────────────────────────────
   let players = [];
-  let sortKey = 'name';
-  let sortDir = 'asc'; // 'asc' or 'desc'
+  let sortKey = 'hc_playTimeShow';
+  let sortDir = 'desc'; // 'asc' or 'desc'
+  let fetching = false;
 
   // ── Helpers ────────────────────────────────────────────────────────
 
@@ -142,14 +145,22 @@
   // ── Data fetching ───────────────────────────────────────────────────
 
   async function fetchStats() {
+    if (fetching) return;
+    fetching = true;
+    loading.style.display = 'block';
+    errorEl.hidden = true;
+    tableWrap.hidden = true;
+    empty.style.display = 'none';
+    searchInput.disabled = true;
+    retryButton.disabled = true;
     try {
-      loading.style.display = 'block';
-      errorEl.style.display = 'none';
       const r = await fetch(STATS_ENDPOINT, { cache: 'no-store' });
       if (!r.ok) throw new Error('HTTP ' + r.status);
       const data = await r.json();
       players = Array.isArray(data.players) ? data.players : [];
       loading.style.display = 'none';
+      tableWrap.hidden = false;
+      searchInput.disabled = false;
       updatedEl.textContent = formatUpdated(data.lastUpdated);
       renderSummary();
       render();
@@ -160,14 +171,18 @@
       resultsCount.innerHTML = '';
       updatedEl.textContent = '';
       renderSummary();
-      errorEl.style.display = 'block';
-      errorEl.textContent = 'Could not reach the statistics endpoint. Please try again later.';
+      errorEl.hidden = false;
       // eslint-disable-next-line no-console
       console.warn('[stats] fetch failed:', e);
+    } finally {
+      fetching = false;
+      retryButton.disabled = false;
     }
   }
 
   // ── Event wiring ───────────────────────────────────────────────────
+
+  retryButton.addEventListener('click', fetchStats);
 
   if (searchInput) {
     searchInput.addEventListener('input', render);
@@ -187,7 +202,11 @@
   }
 
   sortHeaders.forEach(th => {
+    th.setAttribute('tabindex', '0');
     th.addEventListener('click', () => handleSortClick(th.getAttribute('data-sort')));
+    th.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); th.click(); }
+    });
   });
 
   /** Sync the sortable header UI (active state + arrow) with current state. */

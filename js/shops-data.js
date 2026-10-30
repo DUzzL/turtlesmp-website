@@ -1,10 +1,6 @@
-// add or edit shops here, the page picks them up automatically.
-//
-// type:     'specialized' or 'general'. specialized shops show first in search.
-// tags:     filter chips. lowercase, use hyphens for spaces (e.g. "mob-drops").
-// items:    list of items the shop sells. searched on text match.
-//
-// the two examples below show the format. delete or replace them.
+// Shop listings used by the Turtle SMP shop directory.
+// type: specialized or general; leave empty if not provided.
+// tags: lowercase, hyphenated categories; items: the original shop offers.
 
 window.SHOPS = [
   {
@@ -12,7 +8,7 @@ window.SHOPS = [
     "owner": "Dr_Ady",
     "type": "specialized",
     "location": "-116, 116",
-    "tags": ["wood", "nature", "decoration"],
+    "tags": ["wood","nature","decoration"],
     "items": [
       "Mangrove Logs: 2D for 1 Stack",
       "Mangrove Propagule: 2D for 1 Stack",
@@ -36,7 +32,7 @@ window.SHOPS = [
     "owner": "Bekthul",
     "type": "general",
     "location": "-50, -40",
-    "tags": ["travel", "enchanting"],
+    "tags": ["travel","enchanting"],
     "items": [
       "T3 Rockets: 1D for 2 Stacks",
       "T1 Rockets: 1D for 6 Stacks",
@@ -45,13 +41,12 @@ window.SHOPS = [
       "Ender Chest: 1D for 4"
     ]
   },
-  
   {
     "name": "Creaking Head",
     "owner": "LinkSaga",
     "type": "specialized",
     "location": "-102, -6",
-    "tags": ["building-blocks", "decoration"],
+    "tags": ["building-blocks","decoration"],
     "items": [
       "Resin Block: 3D for 1 Stack",
       "Resin Brick: 1D for 2 Stacks",
@@ -59,13 +54,12 @@ window.SHOPS = [
       "Resin Clump: 1D for 3 Stacks"
     ]
   },
-  
   {
     "name": "Dragonna's Trim Shop",
-    "owner": "TurtleAddict96 ",
+    "owner": "TurtleAddict96",
     "type": "specialized",
     "location": "-46, 66",
-    "tags": ["decoration", "valuables"],
+    "tags": ["decoration","valuables"],
     "items": [
       "Bolt Armor Trim: 7+7D for 1",
       "Coast Armor Trim: 7+1D for 1",
@@ -96,7 +90,7 @@ window.SHOPS = [
     "owner": "TurtleAddict",
     "type": "general",
     "location": "-82, -90",
-    "tags": ["food", "mob-drops"],
+    "tags": ["food","mob-drops"],
     "items": [
       "Cake: 0D for 1",
       "Cooked Porkchop: 1D for 2 Stacks",
@@ -125,11 +119,9 @@ window.SHOPS = [
       "Verdant Froglight: 1D for 1 Stack"
     ]
   },
-  
-  
   {
     "name": "Horn Store",
-    "owner": "LinkSaga ",
+    "owner": "LinkSaga",
     "type": "specialized",
     "location": "-120, 72",
     "tags": ["decoration"],
@@ -149,7 +141,7 @@ window.SHOPS = [
     "owner": "ArSyb",
     "type": "general",
     "location": "-8, -59",
-    "tags": ["building-blocks", "redstone", "decoration"],
+    "tags": ["building-blocks","redstone","decoration"],
     "items": [
       "Anvils: 1D for 4",
       "Hoppers: 1D for 8",
@@ -190,7 +182,7 @@ window.SHOPS = [
     "owner": "LinkSaga",
     "type": "general",
     "location": "44, 5",
-    "tags": ["travel", "brewing", "nature"],
+    "tags": ["travel","brewing","nature"],
     "items": [
       "Conduit Set: 27 (3 Blocks)D for 1",
       "Ominius Bottle I: 1D for 1 Stack",
@@ -226,7 +218,7 @@ window.SHOPS = [
     "owner": "Pie_mont",
     "type": "specialized",
     "location": "-90, -115",
-    "tags": ["building-blocks", "decoration"],
+    "tags": ["building-blocks","decoration"],
     "items": [
       "Amethyst Block: 2D for 1 Stack",
       "Amethyst Cluster: 4D for 1 Stack",
@@ -287,7 +279,7 @@ window.SHOPS = [
     "owner": "PPG",
     "type": "general",
     "location": "-10, 120",
-    "tags": ["food", "wood", "valuables", "travel", "enchanting"],
+    "tags": ["food","wood","valuables","travel","enchanting"],
     "items": [
       "Turtle Scute: 15D for 5",
       "Beacon: 9D for 1",
@@ -306,8 +298,8 @@ window.SHOPS = [
       "Glass: 1D for 3 Stacks",
       "Glass: 7D for 1 Shulker",
       "Coloured Glass - All Colours: 1D for 2 Stacks",
-	  "Shulker of Coloured Glass - All Colours: 12D for 1 Shulker",
-	  "Shulker of Dye - Any Colour: 20D for 1 Shulker",
+      "Shulker of Coloured Glass - All Colours: 12D for 1 Shulker",
+      "Shulker of Dye - Any Colour: 20D for 1 Shulker",
       "Glow Squid Ink: 2D for 1 Stack",
       "Tinted Glass: 2D for 1 Stack"
     ]
@@ -317,7 +309,7 @@ window.SHOPS = [
     "owner": "Redrum",
     "type": "general",
     "location": "-125,  -53",
-    "tags": ["food", "mob-drops", "building-blocks", "decoration"],
+    "tags": ["food","mob-drops","building-blocks","decoration"],
     "items": [
       "Feathers: 1D for 64",
       "Eggs: 1D for 16",
@@ -341,150 +333,149 @@ window.SHOPS = [
     ]
   },
   {
-  "name": "Sensei's General Store",
-  "owner": "SenseiWoo",
-  "type": "general",
-  "location": "-1, -24",
-  "tags": ["enchanting", "food", "mob-drops", "equipment", "building-blocks"],
-  "items": [
-    "Aqua Affinity: 2D for 1",
-    "Baked Potato: 1D for 1 Stack",
-    "Bamboo: 1D for 1 Stack",
-    "Bane of Anthropods V: 2D for 1",
-    "Beacon: 9D for 1",
-    "Black Wool: 2D for 1 Stack",
-    "Blast Protection IV: 2D for 1",
-    "Blue Wool: 2D for 1 Stack",
-    "Bone: 1D for 1 Stack",
-    "Breach IV: 2D for 1",
-    "Bread: 1D for 2 Stacks",
-    "Brick: 1D for 2 Stacks",
-    "Brown Wool: 2D for 1 Stack",
-    "Cactus: 1D for 1 Stack",
-    "Channeling: 2D for 1",
-    "Cooked Cod: 1D for 2 Stacks",
-    "Cookies: 1D for 1 Stack",
-    "Curse of Binding: 2D for 1",
-    "Curse of Vanishing: 2D for 1",
-    "Cyan Wool: 2D for 1 Stack",
-    "Density V: 2D for 1",
-    "Depth Strider III: 2D for 1",
-    "Diamond Axe: 2D for 1",
-    "Diamond Boots: 2D for 1",
-    "Diamond Chestplate: 2D for 1",
-    "Diamond Helmet: 2D for 1",
-    "Diamond Hoe: 2D for 1",
-    "Diamond Leggings: 2D for 1",
-    "Diamond Pickaxe: 2D for 1",
-    "Diamond Shovel: 2D for 1",
-    "Diamond Sword: 2D for 1",
-    "Efficiency V: 2D for 1",
-    "Feather Falling IV: 2D for 1",
-    "Fire Aspect II: 2D for 1",
-    "Fire Protection IV: 2D for 1",
-    "Flame: 2D for 1",
-    "Fortune III: 2D for 1",
-    "Frost Walker II: 2D for 1",
-    "Glow Ink: 3D for 1 Stack",
-    "Gray Wool: 2D for 1 Stack",
-    "Green Wool: 2D for 1 Stack",
-    "Honeycomb: 36D for 1 Shulker",
-    "Impaling V: 2D for 1",
-    "Infinity: 2D for 1",
-    "Knockback II: 2D for 1",
-    "Light Blue Wool: 2D for 1 Stack",
-    "Light Gray Wool: 2D for 1 Stack",
-    "Lime Wool: 2D for 1 Stack",
-    "Looting III: 2D for 1",
-    "Loyalty III: 2D for 1",
-    "Luck of the Sea III: 2D for 1",
-    "Lure III: 2D for 1",
-    "Magenta Wool: 2D for 1 Stack",
-    "Mending: 2D for 1",
-    "Mending and Unbreaking III: 2D for 1",
-    "Multishot: 2D for 1",
-    "Orange Wool: 2D for 1 Stack",
-    "Piercing IV: 2D for 1",
-    "Pink Wool: 2D for 1 Stack",
-    "Power V: 2D for 1",
-    "Projectile Protection IV: 2D for 1",
-    "Protection IV: 2D for 1",
-    "Pumpkin Pie: 1D for 1 Stack",
-    "Punch II: 2D for 1",
-    "Purple Wool: 2D for 1 Stack",
-    "Quick Charge III: 2D for 1",
-    "Red Wool: 2D for 1 Stack",
-    "Respiration III: 2D for 1",
-    "Riptide III: 2D for 1",
-    "Saddles: 1D for 3",
-    "Sharpness V: 2D for 1",
-    "Silk Touch: 2D for 1",
-    "Smite V: 2D for 1",
-    "Smooth Stone: 1D for 1 Stack",
-    "Stone: 1D for 2 Stacks",
-    "Sweeping Edge III: 2D for 1",
-    "Thorns III: 2D for 1",
-    "Totem of Undying: 2D for 1",
-    "Unbreaking III: 2D for 1",
-    "White Wool: 2D for 1 Stack",
-    "Wither Skeleton Skulls: 9D for 3",
-    "Yellow Wool: 2D for 1 Stack"
-  ]
-},
- {
-  "name": "The Druid's Grove",
-  "owner": "LadyMariska",
-  "type": "specialized",
-  "location": "-140, 52",
-  "tags": ["nature", "wood"],
-  "items": [
-    "Allium: 1D for 3 Stacks",
-    "Allium: 9D for 1 Shulker",
-    "Azure Bluet: 1D for 3 Stacks",
-    "Azure Bluet: 9D for 1 Shulker",
-    "Bamboo: 1D for 1 Stack",
-    "Blue Orchid: TBAD for 1 Stack",
-    "Cornflower: 1D for 3 Stacks",
-    "Cornflower: 9D for 1 Shulker",
-    "Dandelion: 1D for 3 Stacks",
-    "Dandelion: 9D for 1 Shulker",
-    "Lilac: 1D for 3 Stacks",
-    "Lilac: 9D for 1 Shulker",
-    "Lily of the Valley: 1D for 3 Stacks",
-    "Lily of the Valley: 9D for 1 Shulker",
-    "Orange Tulip: 1D for 3 Stacks",
-    "Orange Tulip: 9D for 1 Shulker",
-    "Oxeye Daisy: 1D for 3 Stacks",
-    "Oxeye Daisy: 9D for 1 Shulker",
-    "Peony: 1D for 3 Stacks",
-    "Peony: 9D for 1 Shulker",
-    "Pink Petals: 2D for 1 Stack",
-    "Pink Tulip: 1D for 3 Stacks",
-    "Pink Tulip: 9D for 1 Shulker",
-    "Poplar Logs: 2D for 1 Stack",
-    "Poplar Saplings: 2D for 16",
-    "Poppy: 1D for 3 Stacks",
-    "Poppy: 9D for 1 Shulker",
-    "Red Tulip: 1D for 3 Stacks",
-    "Red Tulip: 9D for 1 Shulker",
-    "Rose Bush: 1D for 3 Stacks",
-    "Rose Bush: 9D for 1 Shulker",
-    "Sunflower: 1D for 3 Stacks",
-    "Sunflower: 9D for 1 Shulker",
-    "Vines: 1D for 1 Stack",
-    "White Tulip: 1D for 3 Stacks",
-    "White Tulip: 9D for 1 Shulker",
-    "Wildflowers: 1D for 3 Stacks",
-    "Wildflowers: 9D for 1 Shulker"
-  ]
+    "name": "Sensei's General Store",
+    "owner": "SenseiWoo",
+    "type": "general",
+    "location": "-1, -24",
+    "tags": ["enchanting","food","mob-drops","equipment","building-blocks"],
+    "items": [
+      "Aqua Affinity: 2D for 1",
+      "Baked Potato: 1D for 1 Stack",
+      "Bamboo: 1D for 1 Stack",
+      "Bane of Anthropods V: 2D for 1",
+      "Beacon: 9D for 1",
+      "Black Wool: 2D for 1 Stack",
+      "Blast Protection IV: 2D for 1",
+      "Blue Wool: 2D for 1 Stack",
+      "Bone: 1D for 1 Stack",
+      "Breach IV: 2D for 1",
+      "Bread: 1D for 2 Stacks",
+      "Brick: 1D for 2 Stacks",
+      "Brown Wool: 2D for 1 Stack",
+      "Cactus: 1D for 1 Stack",
+      "Channeling: 2D for 1",
+      "Cooked Cod: 1D for 2 Stacks",
+      "Cookies: 1D for 1 Stack",
+      "Curse of Binding: 2D for 1",
+      "Curse of Vanishing: 2D for 1",
+      "Cyan Wool: 2D for 1 Stack",
+      "Density V: 2D for 1",
+      "Depth Strider III: 2D for 1",
+      "Diamond Axe: 2D for 1",
+      "Diamond Boots: 2D for 1",
+      "Diamond Chestplate: 2D for 1",
+      "Diamond Helmet: 2D for 1",
+      "Diamond Hoe: 2D for 1",
+      "Diamond Leggings: 2D for 1",
+      "Diamond Pickaxe: 2D for 1",
+      "Diamond Shovel: 2D for 1",
+      "Diamond Sword: 2D for 1",
+      "Efficiency V: 2D for 1",
+      "Feather Falling IV: 2D for 1",
+      "Fire Aspect II: 2D for 1",
+      "Fire Protection IV: 2D for 1",
+      "Flame: 2D for 1",
+      "Fortune III: 2D for 1",
+      "Frost Walker II: 2D for 1",
+      "Glow Ink: 3D for 1 Stack",
+      "Gray Wool: 2D for 1 Stack",
+      "Green Wool: 2D for 1 Stack",
+      "Honeycomb: 36D for 1 Shulker",
+      "Impaling V: 2D for 1",
+      "Infinity: 2D for 1",
+      "Knockback II: 2D for 1",
+      "Light Blue Wool: 2D for 1 Stack",
+      "Light Gray Wool: 2D for 1 Stack",
+      "Lime Wool: 2D for 1 Stack",
+      "Looting III: 2D for 1",
+      "Loyalty III: 2D for 1",
+      "Luck of the Sea III: 2D for 1",
+      "Lure III: 2D for 1",
+      "Magenta Wool: 2D for 1 Stack",
+      "Mending: 2D for 1",
+      "Mending and Unbreaking III: 2D for 1",
+      "Multishot: 2D for 1",
+      "Orange Wool: 2D for 1 Stack",
+      "Piercing IV: 2D for 1",
+      "Pink Wool: 2D for 1 Stack",
+      "Power V: 2D for 1",
+      "Projectile Protection IV: 2D for 1",
+      "Protection IV: 2D for 1",
+      "Pumpkin Pie: 1D for 1 Stack",
+      "Punch II: 2D for 1",
+      "Purple Wool: 2D for 1 Stack",
+      "Quick Charge III: 2D for 1",
+      "Red Wool: 2D for 1 Stack",
+      "Respiration III: 2D for 1",
+      "Riptide III: 2D for 1",
+      "Saddles: 1D for 3",
+      "Sharpness V: 2D for 1",
+      "Silk Touch: 2D for 1",
+      "Smite V: 2D for 1",
+      "Smooth Stone: 1D for 1 Stack",
+      "Stone: 1D for 2 Stacks",
+      "Sweeping Edge III: 2D for 1",
+      "Thorns III: 2D for 1",
+      "Totem of Undying: 2D for 1",
+      "Unbreaking III: 2D for 1",
+      "White Wool: 2D for 1 Stack",
+      "Wither Skeleton Skulls: 9D for 3",
+      "Yellow Wool: 2D for 1 Stack"
+    ]
   },
-  
+  {
+    "name": "The Druid's Grove",
+    "owner": "LadyMariska",
+    "type": "specialized",
+    "location": "-140, 52",
+    "tags": ["nature","wood"],
+    "items": [
+      "Allium: 1D for 3 Stacks",
+      "Allium: 9D for 1 Shulker",
+      "Azure Bluet: 1D for 3 Stacks",
+      "Azure Bluet: 9D for 1 Shulker",
+      "Bamboo: 1D for 1 Stack",
+      "Blue Orchid: TBAD for 1 Stack",
+      "Cornflower: 1D for 3 Stacks",
+      "Cornflower: 9D for 1 Shulker",
+      "Dandelion: 1D for 3 Stacks",
+      "Dandelion: 9D for 1 Shulker",
+      "Lilac: 1D for 3 Stacks",
+      "Lilac: 9D for 1 Shulker",
+      "Lily of the Valley: 1D for 3 Stacks",
+      "Lily of the Valley: 9D for 1 Shulker",
+      "Orange Tulip: 1D for 3 Stacks",
+      "Orange Tulip: 9D for 1 Shulker",
+      "Oxeye Daisy: 1D for 3 Stacks",
+      "Oxeye Daisy: 9D for 1 Shulker",
+      "Peony: 1D for 3 Stacks",
+      "Peony: 9D for 1 Shulker",
+      "Pink Petals: 2D for 1 Stack",
+      "Pink Tulip: 1D for 3 Stacks",
+      "Pink Tulip: 9D for 1 Shulker",
+      "Poplar Logs: 2D for 1 Stack",
+      "Poplar Saplings: 2D for 16",
+      "Poppy: 1D for 3 Stacks",
+      "Poppy: 9D for 1 Shulker",
+      "Red Tulip: 1D for 3 Stacks",
+      "Red Tulip: 9D for 1 Shulker",
+      "Rose Bush: 1D for 3 Stacks",
+      "Rose Bush: 9D for 1 Shulker",
+      "Sunflower: 1D for 3 Stacks",
+      "Sunflower: 9D for 1 Shulker",
+      "Vines: 1D for 1 Stack",
+      "White Tulip: 1D for 3 Stacks",
+      "White Tulip: 9D for 1 Shulker",
+      "Wildflowers: 1D for 3 Stacks",
+      "Wildflowers: 9D for 1 Shulker"
+    ]
+  },
   {
     "name": "The Skulk Emporium",
     "owner": "Kush_XD",
     "type": "specialized",
     "location": "47,21",
-    "tags": ["decoration", "redstone"],
+    "tags": ["decoration","redstone"],
     "items": [
       "Skulk: 1D for 1 Stack",
       "Skulk Sensor: 1D for 32",
@@ -497,14 +488,7 @@ window.SHOPS = [
     "owner": "DarkCows",
     "type": "general",
     "location": "-80, 20",
-    "tags": [
-      "mob-drops",
-      "building-blocks",
-      "enchanting",
-      "valuables",
-      "food",
-      "redstone"
-    ],
+    "tags": ["mob-drops","building-blocks","enchanting","valuables","food","redstone"],
     "items": [
       "Coal Blocks: 1D for 1 Stack",
       "Diamonds: 1 Ancient Debris for 16",
@@ -522,7 +506,7 @@ window.SHOPS = [
     "owner": "LinkSaga",
     "type": "specialized",
     "location": "-73, -25",
-    "tags": ["valuables", "nature", "decoration"],
+    "tags": ["valuables","nature","decoration"],
     "items": [
       "Beacon: 9D for 1",
       "Wither Rose: 1D for 3 Stacks",
@@ -534,7 +518,7 @@ window.SHOPS = [
     "owner": "Just_Izzy",
     "type": "specialized",
     "location": "-201, 280",
-    "tags": ["redstone", "mob-drops", "building-blocks"],
+    "tags": ["redstone","mob-drops","building-blocks"],
     "items": [
       "Redstone Dust: 1D for 1 Stack",
       "Redstone Block: 4D for 1 Stack",
@@ -566,7 +550,7 @@ window.SHOPS = [
     "owner": "LifelessRomantic, Ender Shepherd",
     "type": "specialized",
     "location": "-172, -17",
-    "tags": ["mob-drops", "building-blocks"],
+    "tags": ["mob-drops","building-blocks"],
     "items": [
       "Bones: 1D for 1 Stack",
       "Bone Blocks: 2D for 1 Stack",
@@ -578,7 +562,7 @@ window.SHOPS = [
     "owner": "PinkietheNinja",
     "type": "general",
     "location": "-114, -87",
-    "tags": ["nature", "enchanting", "travel"],
+    "tags": ["nature","enchanting","travel"],
     "items": [
       "Cherry Blossom Petals: 2D for 1 Stack",
       "Silk Touch Book: 2D for 1",
@@ -592,7 +576,7 @@ window.SHOPS = [
     "owner": "1Betty1",
     "type": "general",
     "location": "-66, 172",
-    "tags": ["valuables", "food", "equipment"],
+    "tags": ["valuables","food","equipment"],
     "items": [
       "Emerald Blocks: 4D for 1 Stack",
       "Silk Touch Pickaxe: 9D for 1",
@@ -603,49 +587,49 @@ window.SHOPS = [
     ]
   },
   {
-  "name": "Apple's Garden Supplies",
-  "owner": "TinyApplePie",
-  "type": "specialized",
-  "location": "-41, -57",
-  "tags": ["nature"],
-  "items": [
-    "Acacia Leaves: 1D for 2 Stacks",
-    "Azalea: 1D for 1 Stack",
-    "Azalea Leaves: 1D for 2 Stacks",
-    "Big Dripleaf: 1D for 32",
-    "Birch Leaves: 1D for 2 Stacks",
-    "Brown Mushroom Block: 1D for 1 Stack",
-    "Bush: 1D for 32",
-    "Cherry Leaves: 1D for 2 Stacks",
-    "Dark Oak Leaves: 1D for 2 Stacks",
-    "Fern: 1D for 32",
-    "Firefly Bush: 1D for 32",
-    "Flowering Azalea: 1D for 1 Stack",
-    "Flowering Azalea Leaves: 1D for 1 Stack",
-    "Glow Lichen: 1D for 32",
-    "Glowberries: 1D for 1 Stack",
-    "Hanging Roots: 1D for 32",
-    "Jungle Leaves: 1D for 2 Stacks",
-    "Mangrove Leaves: 1D for 2 Stacks",
-    "Mangrove Roots: 1D for 32",
-    "Mushroom Stem: 2D for 1 Stack",
-    "Oak Leaves: 1D for 2 Stacks",
-    "Orange Poplar Leaves: 1D for 2 Stacks",
-    "Pale Hanging Moss: 1D for 32",
-    "Pale Oak Leaves: 1D for 2 Stacks",
-    "Red Mushroom Block: 1D for 1 Stack",
-    "Red Poplar Leaves: 1D for 2 Stacks",
-    "Red Shrub: 1D for 32",
-    "Spruce Leaves: 1D for 2 Stacks",
-    "Yellow Poplar Leaves: 1D for 2 Stacks"
-  ]
+    "name": "Apple's Garden Supplies",
+    "owner": "TinyApplePie",
+    "type": "specialized",
+    "location": "-41, -57",
+    "tags": ["nature"],
+    "items": [
+      "Acacia Leaves: 1D for 2 Stacks",
+      "Azalea: 1D for 1 Stack",
+      "Azalea Leaves: 1D for 2 Stacks",
+      "Big Dripleaf: 1D for 32",
+      "Birch Leaves: 1D for 2 Stacks",
+      "Brown Mushroom Block: 1D for 1 Stack",
+      "Bush: 1D for 32",
+      "Cherry Leaves: 1D for 2 Stacks",
+      "Dark Oak Leaves: 1D for 2 Stacks",
+      "Fern: 1D for 32",
+      "Firefly Bush: 1D for 32",
+      "Flowering Azalea: 1D for 1 Stack",
+      "Flowering Azalea Leaves: 1D for 1 Stack",
+      "Glow Lichen: 1D for 32",
+      "Glowberries: 1D for 1 Stack",
+      "Hanging Roots: 1D for 32",
+      "Jungle Leaves: 1D for 2 Stacks",
+      "Mangrove Leaves: 1D for 2 Stacks",
+      "Mangrove Roots: 1D for 32",
+      "Mushroom Stem: 2D for 1 Stack",
+      "Oak Leaves: 1D for 2 Stacks",
+      "Orange Poplar Leaves: 1D for 2 Stacks",
+      "Pale Hanging Moss: 1D for 32",
+      "Pale Oak Leaves: 1D for 2 Stacks",
+      "Red Mushroom Block: 1D for 1 Stack",
+      "Red Poplar Leaves: 1D for 2 Stacks",
+      "Red Shrub: 1D for 32",
+      "Spruce Leaves: 1D for 2 Stacks",
+      "Yellow Poplar Leaves: 1D for 2 Stacks"
+    ]
   },
   {
     "name": "Tree Babies",
     "owner": "Tina1230",
     "type": "specialized",
     "location": "-28, -84",
-    "tags": ["wood", "nature", "building-blocks"],
+    "tags": ["wood","nature","building-blocks"],
     "items": [
       "Oak Saplings: 2D for 16",
       "Dark Oak Saplings: 2D for 16",
@@ -683,15 +667,14 @@ window.SHOPS = [
       "Scaffolding: 1D for 1 Stack",
       "Scaffolding: 20D for 1 Shulker",
       "Andesite: 3D for 1 Stack",
-	    "Diorite: 3D for 1 Stack",
-	    "Deepslate: 1D for 1 Stack",
-	    "Cobbled Deepslate: 1D for 1 Stack",
+      "Diorite: 3D for 1 Stack",
+      "Deepslate: 1D for 1 Stack",
+      "Cobbled Deepslate: 1D for 1 Stack",
       "Cobbled Deepslate: 20D for 1 Shulker",
       "Deepslate: 20D for 1 Shulker",
       "Tuff: 4D for 1 Stack"
     ]
   },
-  
   {
     "name": "Brolympus",
     "owner": "TunaBeef",
@@ -707,9 +690,7 @@ window.SHOPS = [
     "owner": "Star Crop",
     "type": "general",
     "location": "40, 33",
-    "tags": [
-      "general"
-    ],
+    "tags": ["general"],
     "items": [
       "Armor: 2D for 1",
       "Golden Carrots: 1D for 2 Stacks",
@@ -729,11 +710,7 @@ window.SHOPS = [
     "owner": "Poidragon",
     "type": "general",
     "location": "-132, 230",
-    "tags": [
-      "mob-drops",
-      "enchanting",
-      "redstone"
-    ],
+    "tags": ["mob-drops","enchanting","redstone"],
     "items": [
       "Trident (Non-Enchanted): 5D for 1",
       "Loyalty III Book: 2D for 1",
@@ -757,7 +734,7 @@ window.SHOPS = [
     "owner": "Pie_mont",
     "type": "specialized",
     "location": "47, -28",
-    "tags": ["nature", "building-blocks"],
+    "tags": ["nature","building-blocks"],
     "items": [
       "Nether Wart: 2D for 1 Stack",
       "Red Nether Bricks: 3D for 1 Stack"
@@ -768,7 +745,7 @@ window.SHOPS = [
     "owner": "pimkets",
     "type": "general",
     "location": "99, 23",
-    "tags": ["travel", "valuables", "enchanting", "equipment", "building-blocks", "nature", "mob-drops", "redstone"],
+    "tags": ["travel","valuables","enchanting","equipment","building-blocks","nature","mob-drops","redstone"],
     "items": [
       "Bone Block: 2D for 1 Stack",
       "Cactus: 1D for 1 Stack",
@@ -793,7 +770,7 @@ window.SHOPS = [
     "owner": "Funny__chicken",
     "type": "general",
     "location": "-167, 247",
-    "tags": ["travel", "building-blocks"],
+    "tags": ["travel","building-blocks"],
     "items": [
       "Andesite: 3D for 1 Stack",
       "Basalt: 2D for 1 Stack",
@@ -814,10 +791,7 @@ window.SHOPS = [
     "owner": "Tina1230",
     "type": "specialized",
     "location": "-62, -54",
-    "tags": [
-      "building-blocks",
-      "valuables"
-    ],
+    "tags": ["building-blocks","valuables"],
     "items": [
       "Ancient Debris: 16D for 1",
       "Coal Ore: 2D for 1 Stack",
@@ -838,7 +812,6 @@ window.SHOPS = [
       "Redstone Ore: 6D for 32"
     ]
   },
-  
   {
     "name": "Conduit Coleoid's Corals",
     "owner": "samom37",
@@ -920,7 +893,7 @@ window.SHOPS = [
     "owner": "Awoomenatee",
     "type": "specialized",
     "location": "-120, 160",
-    "tags": ["valuables", "building-blocks", "mob-drops"],
+    "tags": ["valuables","building-blocks","mob-drops"],
     "items": [
       "Blackstone: 3D for 1 Shulker",
       "Crying Obsidian: 3D for 1 Shulker",
@@ -937,14 +910,12 @@ window.SHOPS = [
       "String: 4D for 1 Shulker"
     ]
   },
-  
-  
   {
     "name": "Rex’s Ranch",
     "owner": "MambasaurusRex",
     "type": "general",
     "location": "-52, -120",
-    "tags": ["nature", "building-blocks", "enchanting"],
+    "tags": ["nature","building-blocks","enchanting"],
     "items": [
       "Allay (Special Order): 20D for 1",
       "Armadillos (Special Order): 20D for 1",
@@ -987,7 +958,7 @@ window.SHOPS = [
     "owner": "vinkuva_vanne",
     "type": "general",
     "location": "88, 63",
-    "tags": ["building-blocks", "nature", "valuables"],
+    "tags": ["building-blocks","nature","valuables"],
     "items": [
       "Iron Blocks: 2D for 1 Stack",
       "Moss: 1D for 2 Stacks",
@@ -1000,7 +971,7 @@ window.SHOPS = [
     "owner": "Pie_mont",
     "type": "specialized",
     "location": "59, -14",
-    "tags": ["tools", "nature"],
+    "tags": ["tools","nature"],
     "items": [
       "BUYING: Bucket with Pufferfish: 2D for 1 Bucket",
       "BUYING: Bucket with Tropical Fish: 2D for 1 Bucket",
@@ -1016,7 +987,7 @@ window.SHOPS = [
     "owner": "ender_shepherd",
     "type": "general",
     "location": "-24, 107",
-    "tags": ["building-blocks", "tools"],
+    "tags": ["building-blocks","tools"],
     "items": [
       "Cinabar: 6D for 1 Stack",
       "Deepslate Bricks: 2D for 1 Stack",
@@ -1026,573 +997,552 @@ window.SHOPS = [
     ]
   },
   {
-  "name": "Sulfur Shop",
-  "owner": "Manky__",
-  "type": "specialized",
-  "location": "-68, 99",
-  "tags": ["building-blocks", "nature"],
-  "items": [
-    "Cinnabar: 6D for 1 Stack",
-    "Cinnabar: 122D for 1 Shulker",
-    "Potent Sulfur: 2D for 6",
-    "Sulfur Block: 2D for 1 Stack",
-    "Sulfur Block: 81D for 1 Shulker",
-    "Sulfur Spike: 2D for 1 Stack"
-	]
-   },
-   {
-  "name": "The Pine Needle",
-  "owner": "beedisciple & ker0nr0n",
-  "type": "specialized",
-  "location": "-115, 50",
-  "tags": ["decoration", "food", "nature", "wood"],
-  "items": [
-    "Azalea Tree: 1D for 1 Stack",
-    "Beets: 1D for 1 Stack",
-    "Berries: 1D for 1 Stack",
-    "Bread: 1D for 1 Stack",
-    "Brown Eggs: 1D for 16",
-    "Brown Mushrooms: 1D for 32",
-    "Cactus Flower: 1D for 32",
-    "Carrots: 1D for 1 Stack",
-    "Cocoa Beans: 1D for 1 Stack",
-    "Cookies: 1D for 1 Stack",
-    "Eggs: 1D for 16",
-    "Farmer's Starter Pack: 8D for 1 Shulker",
-    "Firefly Bush: 1D for 32",
-    "Flowering Azalea: 1D for 1 Stack",
-    "Glowberries: 1D for 1 Stack",
-    "Golden Apple: 1D for 16",
-    "Golden Carrot: 1D for 2 Stacks",
-    "Moss: 1D for 2 Stacks",
-    "Potatoes: 1D for 1 Stack",
-    "Pumpkin Pie: 1D for 1 Stack",
-    "Pumpkins: 1D for 3 Stacks",
-    "Red Mushrooms: 1D for 32",
-    "Spruce Decor Pack: 20D for 1 Shulker",
-    "Spruce Logs: 2D for 1 Stack",
-    "Spruce Saplings: 2D for 16",
-    "Vines: 1D for 1 Stack",
-    "Wheat: 1D for 1 Stack"
-  ]
-},
-{
-  "name": "DangerZone Merch Store",
-  "owner": "Just__Izzy",
-  "type": "general",
-  "location": "1263, -458",
-  "tags": ["building-blocks", "mob-drops", "valuables"],
-  "items": [
-    "Bone Blocks: 63D for 1 Shulker",
-    "Coal Blocks: 180D for 1 Shulker",
-    "DangerZone Beacon Box: 81D for 1"
-  ]
-},
-{
-  "name": "Cave Shop",
-  "owner": "Halar4",
-  "type": "",
-  "location": "",
-  "tags": ["building-blocks", "nature"],
-  "items": [
-    "Clay: 1D for 4 Stacks",
-    "Clay Blocks: 1D for 1 Stack",
-    "Dirt: 1D for 6 Stacks",
-    "Grass Blocks: 1D for 6 Stacks",
-    "Mossy Cobblestone: 1D for 1 Stack",
-    "Mud: 1D for 2 Stacks",
-    "Terracotta: 2D for 1 Stack"
-  ]
-},
-{
-  "name": "Scorched Oasis",
-  "owner": "LilaAmanita",
-  "type": "specialized",
-  "location": "-134, 16",
-  "tags": ["nature", "wood", "decoration"],
-  "items": [
-    "Bamboo: 1D for 1 Stack",
-    "Cactus: 1D for 1 Stack",
-    "Cocoa Beans: 1D for 1 Stack",
-    "Dead Bushes: 2D for 1 Stack",
-    "Short Dry Grass: 1D for 1 Stack",
-    "Sugar Cane: 1D for 1 Stack",
-    "Tall Dry Grass: 1D for 1 Stack"
-  ]
-},
-{
-  "name": "Mr. Bucket's Buckets of Fun",
-  "owner": "Vallayne",
-  "type": "general",
-  "location": "47, -69",
-  "tags": ["mob-drops", "nature", "tools", "valuables"],
-  "items": [
-    "Blue Axolotl: 180D for 1",
-    "Lava Bucket: 2D for 1",
-    "Lava Buckets: 36D for 1 Shulker",
-    "Milk Buckets: 1D for 3",
-    "Milk Buckets: 6D for 1 Shulker",
-    "Normal Axolotl: 1D for 1",
-    "Powder Snow Bucket: 2D for 1",
-    "Powder Snow Buckets: 36D for 1 Shulker",
-    "Sulfur Cubes: 3D for 1",
-    "Tropical Fish Bucket: 1D for 1",
-    "Water Bucket: 2D for 1",
-    "Water Buckets: 15D for 1 Shulker"
-  ]
-},
-{
-  "name": "Penguin's Snow Hut & More",
-  "owner": "penguingreen",
-  "type": "general",
-  "location": "-15, 75",
-  "tags": ["building-blocks", "mob-drops", "nature"],
-  "items": [
-    "Common Axolotl: 1D for 1",
-    "Snow Blocks: 1D for 2 Stacks",
-    "Snow Layers: 3D for 1 Shulker",
-    "Snowballs: 1D for 1 Shulker"
-  ]
-},
-{
-  "name": "Angel's Anvil",
-  "owner": "Angelshard",
-  "type": "general",
-  "location": "33, 20",
-  "tags": ["valuables", "equipment", "enchanting", "travel"],
-  "items": [
-    "BUYING: Ancient Debris: 8D for 1",
-    "Diamond Armour Piece: 2D for 1",
-    "Diamond Bulk Box: 8D for 1",
-    "Diamond Shovel: 1D for 1",
-    "Diamond Tool: 2D for 1",
-    "Enchantment Books: 2D for 1",
-    "Ender Chest: 1D for 4",
-    "Fortune: 2D for 1",
-    "Fully Enchanted Boots (No Thorns/SE): 12D for 1",
-    "Fully Enchanted Boots (Thorns, No SE): 14D for 1",
-    "Fully Enchanted Bow: 10D for 1",
-    "Fully Enchanted Chestplate (No Thorns): 8D for 1",
-    "Fully Enchanted Chestplate (Thorns): 10D for 1",
-    "Fully Enchanted Crossbow: 8D for 1",
-    "Fully Enchanted Diamond Axe: 12D for 1",
-    "Fully Enchanted Diamond Hoe: 10D for 1",
-    "Fully Enchanted Diamond Pickaxe: 10D for 1",
-    "Fully Enchanted Diamond Shovel: 9D for 1",
-    "Fully Enchanted Diamond Sword (No Fire/KB): 12D for 1",
-    "Fully Enchanted Fishing Rod: 8D for 1",
-    "Fully Enchanted Helmet (No Thorns): 12D for 1",
-    "Fully Enchanted Helmet (Thorns): 14D for 1",
-    "Fully Enchanted Leggings (No Thorns/SE): 8D for 1",
-    "Fully Enchanted Leggings (Thorns, No SE): 10D for 1",
-    "Mending: 2D for 1",
-    "Netherite Upgrade Copy: 4D for 1",
-    "Obsidian: 1D for 2 Stacks",
-    "Silk Touch: 2D for 1",
-    "Unbreaking III: 2D for 1"
-  ]
-},
-{
-  "name": "Mochi's Vending Machine",
-  "owner": "mildmochi",
-  "type": "specialized",
-  "location": "35, -11",
-  "tags": ["food"],
-  "items": [
-    "Golden Apples: 1D for 16",
-    "Golden Carrots: 1D for 2 Stacks"
-  ]
-},
-{
-  "name": "Tree's Gallery & Giftshop",
-  "owner": "Treeweaver",
-  "type": "specialized",
-  "location": "128, -12",
-  "tags": ["decoration"],
-  "items": [
-    "Map Art: 4D for 1"
-  ]
-},
-{
-  "name": "The Tree House",
-  "owner": "Burgerman600",
-  "type": "specialized",
-  "location": "0, 52",
-  "tags": ["wood", "building-blocks"],
-  "items": [
-    "Acacia Logs: 2D for 1 Stack",
-    "Acacia Logs: 20D for 1 Shulker",
-    "Cherry Logs: 2D for 1 Stack",
-    "Cherry Logs: 20D for 1 Shulker",
-    "Jungle Logs: 2D for 1 Stack",
-    "Jungle Logs: 20D for 1 Shulker",
-    "Oak Logs: 2D for 1 Stack",
-    "Oak Logs: 20D for 1 Shulker",
-    "Spruce Logs: 2D for 1 Stack",
-    "Spruce Logs: 20D for 1 Shulker"
-  ]
-},
-{
-  "name": "meowders",
-  "owner": "Grazu",
-  "type": "specialized",
-  "location": "-85, -36",
-  "tags": ["valuables", "mob-drops"],
-  "items": [
-    "Emerald Blocks: 5D for 1 Stack",
-    "Emerald Blocks: 100D for 1 Shulker",
-    "Ominous Bottle III: 1D for 1 Stack",
-    "Ominous Bottle IV: 1D for 32",
-    "Ominous Bottle V: 1D for 16",
-    "Totem of Undying: 2D for 1",
-    "Totem of Undying: 34D for 1 Shulker"
-  ]
-},
-{
-  "name": "Wilderness Treasures",
-  "owner": "Justus",
-  "type": "general",
-  "location": "33, 65",
-  "tags": ["valuables", "enchanting", "mob-drops"],
-  "items": [
-    "Creator (Music Box) Music Disc: 20D for 1",
-    "Creator Music Disc: 20D for 1",
-    "Enchanted Book Wind Burst III: 216D for 1",
-    "Enchanted Golden Apple: 32D for 1",
-    "Heavy Core: 72D for 1",
-    "Netherite Ingot: 40D for 1",
-    "Ominous Key: 5D for 1",
-    "Pigstep Music Disc: 10D for 1"
-  ]
-},
-{
-  "name": "Flight of Stars's Pet Shop & Rescue",
-  "owner": "Flight of Stars",
-  "type": "specialized",
-  "location": "-245, 193",
-  "tags": ["mob-drops", "nature", "tools"],
-  "items": [
-    "Aquarium Kit: 4D for 1",
-    "Axolotl Food (Shulker of Tropical Fish): 9D for 1",
-    "Baby Cow, Pig, or Sheep: 1D for 1",
-    "Bucket of Sulfur Cube: 9D for 1",
-    "Bucket of Tadpole: 2D for 1",
-    "Creaking Heart: 1D for 3",
-    "Dried Ghast (+ Harness): 1D for 1",
-    "Full Bee Hive: 2D for 1",
-    "Golden Dandelions: 2D for 32",
-    "Leads: 1D for 32",
-    "Nametags: 1D for 4",
-    "Nautilus Armor: 3-5D for 1",
-    "Puffer Fish: 2D for 1",
-    "Saddles: 1D for 3",
-    "Shiny Tropical Fish (1/2670): 5D for 1",
-    "Shulker of All 22 Standard Fish: 27D for 1 Shulker",
-    "Splash Potion of Healing: 1D for 1",
-    "Splash Potion of Oozing: 1D for 1",
-    "Tropical Fish School (1/2670): 27D for 1",
-    "Turtle Eggs: 5D for 2",
-    "Untamed Cats: 2-4D for 1",
-    "Untamed Wolves: 1-2D for 1",
-    "Wolf Armor: 1D for 1"
-  ]
-},
-{
-  "name": "Herbal Dialect",
-  "owner": "Herbal Dialect",
-  "type": "general",
-  "location": "-125, -125",
-  "tags": ["building-blocks", "nature", "mob-drops", "decoration", "valuables"],
-  "items": [
-    "Bee Head: 1D for 1",
-    "Block of Copper: 2D for 1 Stack",
-    "Bogged Head: 1D for 1",
-    "Calcite: 3D for 1 Stack",
-    "Coal Ore: 2D for 1 Stack",
-    "Copper Ore: 6D for 1 Stack",
-    "Cow Head: 1D for 1",
-    "Deepslate Coal Ore: 10D for 1",
-    "Deepslate Copper Ore: 2D for 8",
-    "Deepslate Diamond Ore: 3D for 1",
-    "Deepslate Gold Ore: 2D for 16",
-    "Deepslate Iron Ore: 2D for 16",
-    "Deepslate Lapis Ore: 2D for 8",
-    "Deepslate Redstone Ore: 2D for 16",
-    "Diorite: 1D for 1 Stack",
-    "Full Beehive (3 Bees): 1D for 1",
-    "Gold Ore: 2D for 8",
-    "Granite: 3D for 1 Stack",
-    "Honey Bottle: 1D for 32",
-    "Honeycomb: 1D for 1 Stack",
-    "Honeycomb Block: 3D for 1 Stack",
-    "Iron Ore: 3D for 32",
-    "Lapis Ore: 2D for 8",
-    "Phantom Head: 1D for 1",
-    "Phantom Membrane: 1D for 32",
-    "Salmon Head: 1D for 1",
-    "Small Dripleaf: 2D for 1",
-    "Spore Blossom: 3D for 1",
-    "Squid Head: 1D for 1",
-    "Stone/Dirt/Deepslate: 7D for 1 Shulker",
-    "Tropical Fish Head: 1D for 1",
-    "Tuff: 4D for 1 Stack"
-  ]
-},
-{
-  "name": "Neki's Trail",
-  "owner": "nekisamplayer",
-  "type": "general",
-  "location": "-185, 45",
-  "tags": ["decoration", "valuables", "building-blocks"],
-  "items": [
-    "Flint: 1D for 2 Stacks",
-    "Music Disc Relic: 10D for 1",
-    "Pottery Sherd: 1D for 1",
-    "Trims: 10D for 1",
-    "Bone Block: 2D for 1 Stack",
-    "Emerald: 4D for 1 Stack"
-  ]
-},
-{
-  "name": "Aequorea's Sweet Stall",
-  "owner": "Aequoreavic",
-  "type": "specialized",
-  "location": "10, -58",
-  "tags": ["food", "nature"],
-  "items": [
-    "Comb Blocks: 2D for 32",
-    "Cookies: 1D for 1 Stack",
-    "Honey Blocks: 2D for 32",
-    "Pumpkin Pie: 1D for 1 Stack",
-    "Sugar: 1D for 1 Stack",
-    "Sweet Berries: 1D for 1 Stack",
-    "Wax: 1D for 1 Stack"
-  ]
-},
-{
-  "name": "Plazia1's Netherite Shop",
-  "owner": "Plazia1",
-  "type": "specialized",
-  "location": "-28, 119",
-  "tags": ["valuables", "tools"],
-  "items": [
-    "Ancient Debris: 8D for 1",
-    "Netherite Ingot: 32D for 1",
-    "Netherite Upgrade Copy: 3D for 1"
-  ]
-},
-{
-  "name": "Crumbs Deluxe",
-  "owner": "Dooks_15",
-  "type": "specialized",
-  "location": "-168, -75",
-  "tags": ["food"],
-  "items": [
-    "Bread: 0D for 1 Stack",
-    "Cake: 0D for 1",
-    "Cookies: 0D for 1 Stack",
-    "Pumpkin Pie: 0D for 1 Stack"
-  ]
-},
-{
-  "name": "Angel's Inferno",
-  "owner": "Angelshard",
-  "type": "general",
-  "location": "15, 80",
-  "tags": ["valuables", "building-blocks", "mob-drops"],
-  "items": [
-    "Blackstone: 1D for 1 Stack",
-    "Blackstone: 20D for 1 Shulker",
-    "Crying Obsidian: 1D for 5 Stacks",
-    "Crying Obsidian: 3D for 1 Shulker",
-    "Ender Pearl: 1D for 4 Stacks",
-    "Ender Pearl: 5D for 1 Shulker",
-    "Gold Blocks: 3D for 1 Stack",
-    "Gold Blocks: 45D for 1 Shulker",
-    "Iron Blocks: 4D for 1 Stack",
-    "Iron Blocks: 81D for 1 Shulker",
-    "Leather: 1D for 3 Stacks",
-    "Leather: 7D for 1 Shulker",
-    "Nether Brick: 1D for 5 Stacks",
-    "Nether Brick: 3D for 1 Shulker",
-    "Nether Quartz: 1D for 1 Stack",
-    "Nether Quartz: 12D for 1 Shulker",
-    "Obsidian: 1D for 2 Stacks",
-    "Obsidian: 4D for 1 Shulker",
-    "Soul Sand: 1D for 5 Stacks",
-    "Soul Sand: 3D for 1 Shulker"
-  ]
-},
-{
-  "name": "The Moscow Mule",
-  "owner": "RenewedSalt",
-  "type": "specialized",
-  "location": "99, -72",
-  "tags": ["animals", "travel"],
-  "items": [
-    "High level donkey, horse, mule: 72D, 40D under 200 Minutes"
-  ]
-},
-{
-  "name": "UFO",
-  "owner": "Bekthul",
-  "type": "general",
-  "location": "54, 72",
-  "tags": ["building-blocks", "mob-drops", "valuables", "decoration"],
-  "items": [
-    "Basalt: 1D for 1 Stack",
-    "Blackstone: 1D for 1 Stack",
-    "Blackstone: 20D for 1 Shulker",
-    "Blaze Rods: 3D for 1 Stack",
-    "Dark Prismarine: 2D for 1 Stack",
-    "End Rods: 5D for 1 Stack",
-    "End Stone: 2D for 1 Stack",
-    "Honey Blocks: 1D for 16",
-    "Iron Blocks: 2D for 1 Stack",
-    "Magma Blocks: 3D for 1 Stack",
-    "Packed Ice: 1D for 1 Stack",
-    "Prismarine: 1D for 1 Stack",
-    "Prismarine Bricks: 1D for 1 Stack",
-    "Purpur Blocks: 2D for 1 Stack",
-    "Quartz Blocks: 2D for 1 Stack",
-    "Redstone Blocks: 4D for 1 Stack",
-    "Shroomlights: 2D for 1 Stack"
-  ]
-},
-
-{
-  "name": "Treasures from the North",
-  "owner": "Keysnail",
-  "type": "general",
-  "location": "35, -63",
-  "tags": ["building-blocks", "food"],
-  "items": [
-    "Blue Ice: 7D for 1 Stack",
-    "Golden Carrots: 0D for 1",
-    "Packed Ice: 1D for 3 Stacks",
-    "Packed Ice: 10D for 1 Shulker"
-  ]
-},
-{
-  "name": "kat food",
-  "owner": "katburger",
-  "type": "specialized",
-  "location": "-55, 25",
-  "tags": ["food"],
-  "items": [
-    "Bread: 1D for 3 Stacks",
-    "Cake: 1D for 1",
-    "Cooked Beef: 1D for 3 Stacks",
-    "Cooked Salmon: 1D for 4 Stacks",
-    "Cookies: 1D for 1 Stack",
-    "Pumpkin Pie: 1D for 1 Stack"
-  ]
-},
-{
-  "name": "Sai's Terracotta",
-  "owner": "Sai",
-  "type": "specialized",
-  "location": "-178, 88",
-  "tags": ["building-blocks", "decoration"],
-  "items": [
-    "Clay Blocks: 1D for 1 Stack",
-    "Dyed Terracotta: 3D for 1 Stack",
-    "Glazed Terracotta: 3D for 1 Stack",
-    "Terracotta: 2D for 1 Stack"
-  ]
-},
-{
-  "name": "Obtuseninjas Outpost",
-  "owner": "obtuseninja",
-  "type": "general",
-  "location": "464, -185",
-  "tags": ["building-blocks", "nature", "wood", "decoration"],
-  "items": [
-    "All Color Dyes: 1D for 1 Stack",
-    "Bamboo: 1D for 1 Stack",
-    "Cobblestone: 1D for 2 Stacks",
-    "Deepslate: 1D for 1 Stack",
-    "Dirt: 1D for 6 Stacks",
-    "Jungle Leaves: 1D for 2 Stacks",
-    "Jungle Logs: 2D for 1 Stack",
-    "Oak Leaves: 1D for 2 Stacks",
-    "Oak Logs: 2D for 1 Stack",
-    "Scaffolding: 1D for 1 Stack",
-    "Spruce Leaves: 1D for 2 Stacks",
-    "Spruce Logs: 2D for 1 Stack",
-    "Sugar Cane: 1D for 1 Stack",
-    "Tuff: 4D for 1 Stack",
-    "Wheat: 1D for 1 Stack",
-    "Wheat Seeds: 1D for 5 Stacks"
-  ]
-},
-{
-  "name": "Banana Hut",
-  "owner": "chillybanana",
-  "type": "general",
-  "location": "-163, 25",
-  "tags": ["decoration", "building-blocks"],
-  "items": [
-    "Block of Quartz: 2D for 1 Stack",
-    "Block of Quartz: 54D for 1 Shulker",
-    "Map Art: 36D for 1",
-    "Quartz Pillar: 2D for 1 Stack",
-    "Quartz Pillar: 54D for 1 Shulker"
-  ]
-},
-{
-  "name": "Mossy & Messy",
-  "owner": "Baaxton",
-  "type": "specialized",
-  "location": "-68, 154",
-  "tags": ["building-blocks", "nature", "decoration"],
-  "items": [
-    "Azalea: 1D for 1 Stack",
-    "Crimson Root: 1D for 1 Stack",
-    "Flowering Azalea: 1D for 1 Stack",
-    "Hanging Root: 2D for 1 Stack",
-    "Hay Bale: 6D for 1 Stack",
-    "Kelp Block: 6D for 1 Stack",
-    "Moss: 1D for 1 Stack",
-    "Moss Carpet: 1D for 1 Stack",
-    "Mossy Cobblestone: 1D for 1 Stack",
-    "Mossy Stone Brick: 1D for 1 Stack",
-    "Pale Moss: 1D for 1 Stack",
-    "Pale Moss Carpet: 1D for 1 Stack",
-    "Warped Root: 1D for 1 Stack"
-  ]
-},
-{
-  "name": "Vinyl Shop",
-  "owner": "Baaxton",
-  "type": "specialized",
-  "location": "-214, -44",
-  "tags": ["decoration", "valuables"],
-  "items": [
-    "Music Disc 11: 2D for 1",
-    "Music Disc 13: 1D for 1",
-    "Music Disc Blocks: 5D for 1",
-    "Music Disc Cat: 1D for 1",
-    "Music Disc Chirp: 5D for 1",
-    "Music Disc Far: 5D for 1",
-    "Music Disc Mall: 5D for 1",
-    "Music Disc Mellohi: 10D for 1",
-    "Music Disc Stal: 5D for 1",
-    "Music Disc Strad: 5D for 1",
-    "Music Disc Wait: 5D for 1",
-    "Music Disc Ward: 5D for 1"
-  ]
-},
-{
+    "name": "Sulfur Shop",
+    "owner": "Manky__",
+    "type": "specialized",
+    "location": "-68, 99",
+    "tags": ["building-blocks","nature"],
+    "items": [
+      "Cinnabar: 6D for 1 Stack",
+      "Cinnabar: 122D for 1 Shulker",
+      "Potent Sulfur: 2D for 6",
+      "Sulfur Block: 2D for 1 Stack",
+      "Sulfur Block: 81D for 1 Shulker",
+      "Sulfur Spike: 2D for 1 Stack"
+    ]
+  },
+  {
+    "name": "The Pine Needle",
+    "owner": "beedisciple & ker0nr0n",
+    "type": "specialized",
+    "location": "-115, 50",
+    "tags": ["decoration","food","nature","wood"],
+    "items": [
+      "Azalea Tree: 1D for 1 Stack",
+      "Beets: 1D for 1 Stack",
+      "Berries: 1D for 1 Stack",
+      "Bread: 1D for 1 Stack",
+      "Brown Eggs: 1D for 16",
+      "Brown Mushrooms: 1D for 32",
+      "Cactus Flower: 1D for 32",
+      "Carrots: 1D for 1 Stack",
+      "Cocoa Beans: 1D for 1 Stack",
+      "Cookies: 1D for 1 Stack",
+      "Eggs: 1D for 16",
+      "Farmer's Starter Pack: 8D for 1 Shulker",
+      "Firefly Bush: 1D for 32",
+      "Flowering Azalea: 1D for 1 Stack",
+      "Glowberries: 1D for 1 Stack",
+      "Golden Apple: 1D for 16",
+      "Golden Carrot: 1D for 2 Stacks",
+      "Moss: 1D for 2 Stacks",
+      "Potatoes: 1D for 1 Stack",
+      "Pumpkin Pie: 1D for 1 Stack",
+      "Pumpkins: 1D for 3 Stacks",
+      "Red Mushrooms: 1D for 32",
+      "Spruce Decor Pack: 20D for 1 Shulker",
+      "Spruce Logs: 2D for 1 Stack",
+      "Spruce Saplings: 2D for 16",
+      "Vines: 1D for 1 Stack",
+      "Wheat: 1D for 1 Stack"
+    ]
+  },
+  {
+    "name": "DangerZone Merch Store",
+    "owner": "Just__Izzy",
+    "type": "general",
+    "location": "1263, -458",
+    "tags": ["building-blocks","mob-drops","valuables"],
+    "items": [
+      "Bone Blocks: 63D for 1 Shulker",
+      "Coal Blocks: 180D for 1 Shulker",
+      "DangerZone Beacon Box: 81D for 1"
+    ]
+  },
+  {
+    "name": "Scorched Oasis",
+    "owner": "LilaAmanita",
+    "type": "specialized",
+    "location": "-134, 16",
+    "tags": ["nature","wood","decoration"],
+    "items": [
+      "Bamboo: 1D for 1 Stack",
+      "Cactus: 1D for 1 Stack",
+      "Cocoa Beans: 1D for 1 Stack",
+      "Dead Bushes: 2D for 1 Stack",
+      "Short Dry Grass: 1D for 1 Stack",
+      "Sugar Cane: 1D for 1 Stack",
+      "Tall Dry Grass: 1D for 1 Stack"
+    ]
+  },
+  {
+    "name": "Mr. Bucket's Buckets of Fun",
+    "owner": "Vallayne",
+    "type": "general",
+    "location": "47, -69",
+    "tags": ["mob-drops","nature","tools","valuables"],
+    "items": [
+      "Blue Axolotl: 180D for 1",
+      "Lava Bucket: 2D for 1",
+      "Lava Buckets: 36D for 1 Shulker",
+      "Milk Buckets: 1D for 3",
+      "Milk Buckets: 6D for 1 Shulker",
+      "Normal Axolotl: 1D for 1",
+      "Powder Snow Bucket: 2D for 1",
+      "Powder Snow Buckets: 36D for 1 Shulker",
+      "Sulfur Cubes: 3D for 1",
+      "Tropical Fish Bucket: 1D for 1",
+      "Water Bucket: 2D for 1",
+      "Water Buckets: 15D for 1 Shulker"
+    ]
+  },
+  {
+    "name": "Penguin's Snow Hut & More",
+    "owner": "penguingreen",
+    "type": "general",
+    "location": "-15, 75",
+    "tags": ["building-blocks","mob-drops","nature"],
+    "items": [
+      "Common Axolotl: 1D for 1",
+      "Snow Blocks: 1D for 2 Stacks",
+      "Snow Layers: 3D for 1 Shulker",
+      "Snowballs: 1D for 1 Shulker"
+    ]
+  },
+  {
+    "name": "Angel's Anvil",
+    "owner": "Angelshard",
+    "type": "general",
+    "location": "33, 20",
+    "tags": ["valuables","equipment","enchanting","travel"],
+    "items": [
+      "BUYING: Ancient Debris: 8D for 1",
+      "Diamond Armour Piece: 2D for 1",
+      "Diamond Bulk Box: 8D for 1",
+      "Diamond Shovel: 1D for 1",
+      "Diamond Tool: 2D for 1",
+      "Enchantment Books: 2D for 1",
+      "Ender Chest: 1D for 4",
+      "Fortune: 2D for 1",
+      "Fully Enchanted Boots (No Thorns/SE): 12D for 1",
+      "Fully Enchanted Boots (Thorns, No SE): 14D for 1",
+      "Fully Enchanted Bow: 10D for 1",
+      "Fully Enchanted Chestplate (No Thorns): 8D for 1",
+      "Fully Enchanted Chestplate (Thorns): 10D for 1",
+      "Fully Enchanted Crossbow: 8D for 1",
+      "Fully Enchanted Diamond Axe: 12D for 1",
+      "Fully Enchanted Diamond Hoe: 10D for 1",
+      "Fully Enchanted Diamond Pickaxe: 10D for 1",
+      "Fully Enchanted Diamond Shovel: 9D for 1",
+      "Fully Enchanted Diamond Sword (No Fire/KB): 12D for 1",
+      "Fully Enchanted Fishing Rod: 8D for 1",
+      "Fully Enchanted Helmet (No Thorns): 12D for 1",
+      "Fully Enchanted Helmet (Thorns): 14D for 1",
+      "Fully Enchanted Leggings (No Thorns/SE): 8D for 1",
+      "Fully Enchanted Leggings (Thorns, No SE): 10D for 1",
+      "Mending: 2D for 1",
+      "Netherite Upgrade Copy: 4D for 1",
+      "Obsidian: 1D for 2 Stacks",
+      "Silk Touch: 2D for 1",
+      "Unbreaking III: 2D for 1"
+    ]
+  },
+  {
+    "name": "Mochi's Vending Machine",
+    "owner": "mildmochi",
+    "type": "specialized",
+    "location": "35, -11",
+    "tags": ["food"],
+    "items": [
+      "Golden Apples: 1D for 16",
+      "Golden Carrots: 1D for 2 Stacks"
+    ]
+  },
+  {
+    "name": "Tree's Gallery & Giftshop",
+    "owner": "Treeweaver",
+    "type": "specialized",
+    "location": "128, -12",
+    "tags": ["decoration"],
+    "items": [
+      "Map Art: 4D for 1"
+    ]
+  },
+  {
+    "name": "The Tree House",
+    "owner": "Burgerman600",
+    "type": "specialized",
+    "location": "0, 52",
+    "tags": ["wood","building-blocks"],
+    "items": [
+      "Acacia Logs: 2D for 1 Stack",
+      "Acacia Logs: 20D for 1 Shulker",
+      "Cherry Logs: 2D for 1 Stack",
+      "Cherry Logs: 20D for 1 Shulker",
+      "Jungle Logs: 2D for 1 Stack",
+      "Jungle Logs: 20D for 1 Shulker",
+      "Oak Logs: 2D for 1 Stack",
+      "Oak Logs: 20D for 1 Shulker",
+      "Spruce Logs: 2D for 1 Stack",
+      "Spruce Logs: 20D for 1 Shulker"
+    ]
+  },
+  {
+    "name": "meowders",
+    "owner": "Grazu",
+    "type": "specialized",
+    "location": "-85, -36",
+    "tags": ["valuables","mob-drops"],
+    "items": [
+      "Emerald Blocks: 5D for 1 Stack",
+      "Emerald Blocks: 100D for 1 Shulker",
+      "Ominous Bottle III: 1D for 1 Stack",
+      "Ominous Bottle IV: 1D for 32",
+      "Ominous Bottle V: 1D for 16",
+      "Totem of Undying: 2D for 1",
+      "Totem of Undying: 34D for 1 Shulker"
+    ]
+  },
+  {
+    "name": "Wilderness Treasures",
+    "owner": "Justus",
+    "type": "general",
+    "location": "33, 65",
+    "tags": ["valuables","enchanting","mob-drops"],
+    "items": [
+      "Creator (Music Box) Music Disc: 20D for 1",
+      "Creator Music Disc: 20D for 1",
+      "Enchanted Book Wind Burst III: 216D for 1",
+      "Enchanted Golden Apple: 32D for 1",
+      "Heavy Core: 72D for 1",
+      "Netherite Ingot: 40D for 1",
+      "Ominous Key: 5D for 1",
+      "Pigstep Music Disc: 10D for 1"
+    ]
+  },
+  {
+    "name": "Flight of Stars's Pet Shop & Rescue",
+    "owner": "Flight of Stars",
+    "type": "specialized",
+    "location": "-245, 193",
+    "tags": ["mob-drops","nature","tools"],
+    "items": [
+      "Aquarium Kit: 4D for 1",
+      "Axolotl Food (Shulker of Tropical Fish): 9D for 1",
+      "Baby Cow, Pig, or Sheep: 1D for 1",
+      "Bucket of Sulfur Cube: 9D for 1",
+      "Bucket of Tadpole: 2D for 1",
+      "Creaking Heart: 1D for 3",
+      "Dried Ghast (+ Harness): 1D for 1",
+      "Full Bee Hive: 2D for 1",
+      "Golden Dandelions: 2D for 32",
+      "Leads: 1D for 32",
+      "Nametags: 1D for 4",
+      "Nautilus Armor: 3-5D for 1",
+      "Puffer Fish: 2D for 1",
+      "Saddles: 1D for 3",
+      "Shiny Tropical Fish (1/2670): 5D for 1",
+      "Shulker of All 22 Standard Fish: 27D for 1 Shulker",
+      "Splash Potion of Healing: 1D for 1",
+      "Splash Potion of Oozing: 1D for 1",
+      "Tropical Fish School (1/2670): 27D for 1",
+      "Turtle Eggs: 5D for 2",
+      "Untamed Cats: 2-4D for 1",
+      "Untamed Wolves: 1-2D for 1",
+      "Wolf Armor: 1D for 1"
+    ]
+  },
+  {
+    "name": "Herbal Dialect",
+    "owner": "Herbal Dialect",
+    "type": "general",
+    "location": "-125, -125",
+    "tags": ["building-blocks","nature","mob-drops","decoration","valuables"],
+    "items": [
+      "Bee Head: 1D for 1",
+      "Block of Copper: 2D for 1 Stack",
+      "Bogged Head: 1D for 1",
+      "Calcite: 3D for 1 Stack",
+      "Coal Ore: 2D for 1 Stack",
+      "Copper Ore: 6D for 1 Stack",
+      "Cow Head: 1D for 1",
+      "Deepslate Coal Ore: 10D for 1",
+      "Deepslate Copper Ore: 2D for 8",
+      "Deepslate Diamond Ore: 3D for 1",
+      "Deepslate Gold Ore: 2D for 16",
+      "Deepslate Iron Ore: 2D for 16",
+      "Deepslate Lapis Ore: 2D for 8",
+      "Deepslate Redstone Ore: 2D for 16",
+      "Diorite: 1D for 1 Stack",
+      "Full Beehive (3 Bees): 1D for 1",
+      "Gold Ore: 2D for 8",
+      "Granite: 3D for 1 Stack",
+      "Honey Bottle: 1D for 32",
+      "Honeycomb: 1D for 1 Stack",
+      "Honeycomb Block: 3D for 1 Stack",
+      "Iron Ore: 3D for 32",
+      "Lapis Ore: 2D for 8",
+      "Phantom Head: 1D for 1",
+      "Phantom Membrane: 1D for 32",
+      "Salmon Head: 1D for 1",
+      "Small Dripleaf: 2D for 1",
+      "Spore Blossom: 3D for 1",
+      "Squid Head: 1D for 1",
+      "Stone/Dirt/Deepslate: 7D for 1 Shulker",
+      "Tropical Fish Head: 1D for 1",
+      "Tuff: 4D for 1 Stack"
+    ]
+  },
+  {
+    "name": "Neki's Trail",
+    "owner": "nekisamplayer",
+    "type": "general",
+    "location": "-185, 45",
+    "tags": ["decoration","valuables","building-blocks"],
+    "items": [
+      "Flint: 1D for 2 Stacks",
+      "Music Disc Relic: 10D for 1",
+      "Pottery Sherd: 1D for 1",
+      "Trims: 10D for 1",
+      "Bone Block: 2D for 1 Stack",
+      "Emerald: 4D for 1 Stack"
+    ]
+  },
+  {
+    "name": "Aequorea's Sweet Stall",
+    "owner": "Aequoreavic",
+    "type": "specialized",
+    "location": "10, -58",
+    "tags": ["food","nature"],
+    "items": [
+      "Comb Blocks: 2D for 32",
+      "Cookies: 1D for 1 Stack",
+      "Honey Blocks: 2D for 32",
+      "Pumpkin Pie: 1D for 1 Stack",
+      "Sugar: 1D for 1 Stack",
+      "Sweet Berries: 1D for 1 Stack",
+      "Wax: 1D for 1 Stack"
+    ]
+  },
+  {
+    "name": "Plazia1's Netherite Shop",
+    "owner": "Plazia1",
+    "type": "specialized",
+    "location": "-28, 119",
+    "tags": ["valuables","tools"],
+    "items": [
+      "Ancient Debris: 8D for 1",
+      "Netherite Ingot: 32D for 1",
+      "Netherite Upgrade Copy: 3D for 1"
+    ]
+  },
+  {
+    "name": "Crumbs Deluxe",
+    "owner": "Dooks_15",
+    "type": "specialized",
+    "location": "-168, -75",
+    "tags": ["food"],
+    "items": [
+      "Bread: 0D for 1 Stack",
+      "Cake: 0D for 1",
+      "Cookies: 0D for 1 Stack",
+      "Pumpkin Pie: 0D for 1 Stack"
+    ]
+  },
+  {
+    "name": "Angel's Inferno",
+    "owner": "Angelshard",
+    "type": "general",
+    "location": "15, 80",
+    "tags": ["valuables","building-blocks","mob-drops"],
+    "items": [
+      "Blackstone: 1D for 1 Stack",
+      "Blackstone: 20D for 1 Shulker",
+      "Crying Obsidian: 1D for 5 Stacks",
+      "Crying Obsidian: 3D for 1 Shulker",
+      "Ender Pearl: 1D for 4 Stacks",
+      "Ender Pearl: 5D for 1 Shulker",
+      "Gold Blocks: 3D for 1 Stack",
+      "Gold Blocks: 45D for 1 Shulker",
+      "Iron Blocks: 4D for 1 Stack",
+      "Iron Blocks: 81D for 1 Shulker",
+      "Leather: 1D for 3 Stacks",
+      "Leather: 7D for 1 Shulker",
+      "Nether Brick: 1D for 5 Stacks",
+      "Nether Brick: 3D for 1 Shulker",
+      "Nether Quartz: 1D for 1 Stack",
+      "Nether Quartz: 12D for 1 Shulker",
+      "Obsidian: 1D for 2 Stacks",
+      "Obsidian: 4D for 1 Shulker",
+      "Soul Sand: 1D for 5 Stacks",
+      "Soul Sand: 3D for 1 Shulker"
+    ]
+  },
+  {
+    "name": "The Moscow Mule",
+    "owner": "RenewedSalt",
+    "type": "specialized",
+    "location": "99, -72",
+    "tags": ["animals","travel"],
+    "items": [
+      "High level donkey, horse, mule: 72D, 40D under 200 Minutes"
+    ]
+  },
+  {
+    "name": "UFO",
+    "owner": "Bekthul",
+    "type": "general",
+    "location": "54, 72",
+    "tags": ["building-blocks","mob-drops","valuables","decoration"],
+    "items": [
+      "Basalt: 1D for 1 Stack",
+      "Blackstone: 1D for 1 Stack",
+      "Blackstone: 20D for 1 Shulker",
+      "Blaze Rods: 3D for 1 Stack",
+      "Dark Prismarine: 2D for 1 Stack",
+      "End Rods: 5D for 1 Stack",
+      "End Stone: 2D for 1 Stack",
+      "Honey Blocks: 1D for 16",
+      "Iron Blocks: 2D for 1 Stack",
+      "Magma Blocks: 3D for 1 Stack",
+      "Packed Ice: 1D for 1 Stack",
+      "Prismarine: 1D for 1 Stack",
+      "Prismarine Bricks: 1D for 1 Stack",
+      "Purpur Blocks: 2D for 1 Stack",
+      "Quartz Blocks: 2D for 1 Stack",
+      "Redstone Blocks: 4D for 1 Stack",
+      "Shroomlights: 2D for 1 Stack"
+    ]
+  },
+  {
+    "name": "Treasures from the North",
+    "owner": "Keysnail",
+    "type": "general",
+    "location": "35, -63",
+    "tags": ["building-blocks","food"],
+    "items": [
+      "Blue Ice: 7D for 1 Stack",
+      "Golden Carrots: 0D for 1",
+      "Packed Ice: 1D for 3 Stacks",
+      "Packed Ice: 10D for 1 Shulker"
+    ]
+  },
+  {
+    "name": "kat food",
+    "owner": "katburger",
+    "type": "specialized",
+    "location": "-55, 25",
+    "tags": ["food"],
+    "items": [
+      "Bread: 1D for 3 Stacks",
+      "Cake: 1D for 1",
+      "Cooked Beef: 1D for 3 Stacks",
+      "Cooked Salmon: 1D for 4 Stacks",
+      "Cookies: 1D for 1 Stack",
+      "Pumpkin Pie: 1D for 1 Stack"
+    ]
+  },
+  {
+    "name": "Sai's Terracotta",
+    "owner": "Sai",
+    "type": "specialized",
+    "location": "-178, 88",
+    "tags": ["building-blocks","decoration"],
+    "items": [
+      "Clay Blocks: 1D for 1 Stack",
+      "Dyed Terracotta: 3D for 1 Stack",
+      "Glazed Terracotta: 3D for 1 Stack",
+      "Terracotta: 2D for 1 Stack"
+    ]
+  },
+  {
+    "name": "Obtuseninjas Outpost",
+    "owner": "obtuseninja",
+    "type": "general",
+    "location": "464, -185",
+    "tags": ["building-blocks","nature","wood","decoration"],
+    "items": [
+      "All Color Dyes: 1D for 1 Stack",
+      "Bamboo: 1D for 1 Stack",
+      "Cobblestone: 1D for 2 Stacks",
+      "Deepslate: 1D for 1 Stack",
+      "Dirt: 1D for 6 Stacks",
+      "Jungle Leaves: 1D for 2 Stacks",
+      "Jungle Logs: 2D for 1 Stack",
+      "Oak Leaves: 1D for 2 Stacks",
+      "Oak Logs: 2D for 1 Stack",
+      "Scaffolding: 1D for 1 Stack",
+      "Spruce Leaves: 1D for 2 Stacks",
+      "Spruce Logs: 2D for 1 Stack",
+      "Sugar Cane: 1D for 1 Stack",
+      "Tuff: 4D for 1 Stack",
+      "Wheat: 1D for 1 Stack",
+      "Wheat Seeds: 1D for 5 Stacks"
+    ]
+  },
+  {
+    "name": "Banana Hut",
+    "owner": "chillybanana",
+    "type": "general",
+    "location": "-163, 25",
+    "tags": ["decoration","building-blocks"],
+    "items": [
+      "Block of Quartz: 2D for 1 Stack",
+      "Block of Quartz: 54D for 1 Shulker",
+      "Map Art: 36D for 1",
+      "Quartz Pillar: 2D for 1 Stack",
+      "Quartz Pillar: 54D for 1 Shulker"
+    ]
+  },
+  {
+    "name": "Mossy & Messy",
+    "owner": "Baaxton",
+    "type": "specialized",
+    "location": "-68, 154",
+    "tags": ["building-blocks","nature","decoration"],
+    "items": [
+      "Azalea: 1D for 1 Stack",
+      "Crimson Root: 1D for 1 Stack",
+      "Flowering Azalea: 1D for 1 Stack",
+      "Hanging Root: 2D for 1 Stack",
+      "Hay Bale: 6D for 1 Stack",
+      "Kelp Block: 6D for 1 Stack",
+      "Moss: 1D for 1 Stack",
+      "Moss Carpet: 1D for 1 Stack",
+      "Mossy Cobblestone: 1D for 1 Stack",
+      "Mossy Stone Brick: 1D for 1 Stack",
+      "Pale Moss: 1D for 1 Stack",
+      "Pale Moss Carpet: 1D for 1 Stack",
+      "Warped Root: 1D for 1 Stack"
+    ]
+  },
+  {
+    "name": "Vinyl Shop",
+    "owner": "Baaxton",
+    "type": "specialized",
+    "location": "-214, -44",
+    "tags": ["decoration","valuables"],
+    "items": [
+      "Music Disc 11: 2D for 1",
+      "Music Disc 13: 1D for 1",
+      "Music Disc Blocks: 5D for 1",
+      "Music Disc Cat: 1D for 1",
+      "Music Disc Chirp: 5D for 1",
+      "Music Disc Far: 5D for 1",
+      "Music Disc Mall: 5D for 1",
+      "Music Disc Mellohi: 10D for 1",
+      "Music Disc Stal: 5D for 1",
+      "Music Disc Strad: 5D for 1",
+      "Music Disc Wait: 5D for 1",
+      "Music Disc Ward: 5D for 1"
+    ]
+  },
+  {
     "name": "Bamboo Barn",
     "owner": "JMDnix",
     "type": "specialized",
     "location": "-43, 6",
-    "tags": [
-      "wood",
-      "building-blocks",
-      "nature"
-    ],
+    "tags": ["wood","building-blocks","nature"],
     "items": [
       "Bamboo Blocks: 36D for 1 Shulker",
       "Bamboo Mosaic: 18D for 1 Shulker",
@@ -1601,99 +1551,97 @@ window.SHOPS = [
       "Scaffolding: 20D for 1 Shulker"
     ]
   },
-{
-  "name": "badoinkaz' bazaar",
-  "owner": "badoinkaz",
-  "type": "specialized",
-  "location": "211.05, -11.08",
-  "tags": ["valuables", "enchanting"],
-  "items": [
-    "Netherite Ingot: 40D for 1",
-    "Netherite Upgrade Copy: 3D for 1"
-  ]
-},
-{
-  "name": "Sheep Head",
-  "owner": "Cacavaleira",
-  "type": "specialized",
-  "location": "80, 51",
-  "tags": ["building-blocks", "decoration"],
-  "items": [
-    "Mixed Wool Bundle: 2D for 1 Stack",
-    "Wool (All Colors): 2D for 1 Stack"
-  ]
-},
-{
-  "name": "KON Shop",
-  "owner": "Konfuzius999",
-  "type": "general",
-  "location": "0, 150",
-  "tags": ["building-blocks", "wood", "valuables", "equipment", "enchanting", "mob-drops", "food", "travel"],
-  "items": [
-    "Acacia Logs: 2D for 1 Stack",
-    "Acacia Logs: 20D for 1 Shulker",
-    "Beacon: 9D for 1",
-    "Birch Logs: 2D for 1 Stack",
-    "Birch Logs: 20D for 1 Shulker",
-    "Bone Blocks: 2D for 1 Stack",
-    "Bone Blocks: 50D for 1 Shulker",
-    "Cherry Logs: 2D for 1 Stack",
-    "Cherry Logs: 20D for 1 Shulker",
-    "Dark Oak Logs: 2D for 1 Stack",
-    "Dark Oak Logs: 20D for 1 Shulker",
-    "Dirt: 1D for 5 Stacks",
-    "Dirt: 7D for 1 Shulker",
-    "Dirt: 6D per Shulker for 10 Shulkers",
-    "Elytra: 20D for 1",
-    "Golden Apple: 1D for 16",
-    "Mangrove Logs: 2D for 1 Stack",
-    "Mangrove Logs: 20D for 1 Shulker",
-    "Mangrove Roots: 1D for 1 Stack",
-    "Netherite Ingot: 45D for 1 (Limit: 2 per day)",
-    "Netherite Upgrade Copy: 3D for 1",
-    "Oak Logs: 2D for 1 Stack",
-    "Oak Logs: 20D for 1 Shulker",
-    "Ominous Key: 5D for 1",
-    "Pale Oak Logs: 2D for 1 Stack",
-    "Pale Oak Logs: 20D for 1 Shulker",
-    "Poplar Logs: 2D for 1 Stack",
-    "Poplar Logs: 20D for 1 Shulker",
-    "Rocket T3: 1D for 2 Stacks",
-    "Rocket T3: 13D for 1 Shulker",
-    "Shulker Shell: 1D for 1 Stack",
-    "Shulker Shell: 27D for 1 Stack (Limit: 1 per day)",
-    "Soul Speed III: 3D for 1",
-    "Spruce Logs: 2D for 1 Stack",
-    "Spruce Logs: 20D for 1 Shulker"
-  ]
-},
-{
-  "name": "101 Pistons",
-  "owner": "DFZ_FDT",
-  "type": "general",
-  "location": "26, -44",
-  "tags": ["redstone", "building-blocks", "valuables"],
-  "items": [
-    "Ancient Debris: 12D for 1",
-    "Comparator: 8D for 1 Stack",
-    "Copper Golems: 4D for 32",
-    "Observer: 8D for 1 Stack",
-    "Piston: 4D for 1 Stack",
-    "Redstone Block: 8D for 1 Stack",
-    "Redstone Dust: 1D for 1 Stack",
-    "Redstone Torch: 1D for 1 Stack",
-    "Repeater: 4D for 1 Stack",
-    "Sticky Piston: 8D for 1 Stack"
-  ]
-},
+  {
+    "name": "badoinkaz' bazaar",
+    "owner": "badoinkaz",
+    "type": "specialized",
+    "location": "211.05, -11.08",
+    "tags": ["valuables","enchanting"],
+    "items": [
+      "Netherite Ingot: 40D for 1",
+      "Netherite Upgrade Copy: 3D for 1"
+    ]
+  },
+  {
+    "name": "Sheep Head",
+    "owner": "Cacavaleira",
+    "type": "specialized",
+    "location": "80, 51",
+    "tags": ["building-blocks","decoration"],
+    "items": [
+      "Mixed Wool Bundle: 2D for 1 Stack",
+      "Wool (All Colors): 2D for 1 Stack"
+    ]
+  },
+  {
+    "name": "KON Shop",
+    "owner": "Konfuzius999",
+    "type": "general",
+    "location": "0, 150",
+    "tags": ["building-blocks","wood","valuables","equipment","enchanting","mob-drops","food","travel"],
+    "items": [
+      "Acacia Logs: 2D for 1 Stack",
+      "Acacia Logs: 20D for 1 Shulker",
+      "Beacon: 9D for 1",
+      "Birch Logs: 2D for 1 Stack",
+      "Birch Logs: 20D for 1 Shulker",
+      "Bone Blocks: 2D for 1 Stack",
+      "Bone Blocks: 50D for 1 Shulker",
+      "Cherry Logs: 2D for 1 Stack",
+      "Cherry Logs: 20D for 1 Shulker",
+      "Dark Oak Logs: 2D for 1 Stack",
+      "Dark Oak Logs: 20D for 1 Shulker",
+      "Dirt: 1D for 5 Stacks",
+      "Dirt: 7D for 1 Shulker",
+      "Dirt: 6D per Shulker for 10 Shulkers",
+      "Elytra: 20D for 1",
+      "Golden Apple: 1D for 16",
+      "Mangrove Logs: 2D for 1 Stack",
+      "Mangrove Logs: 20D for 1 Shulker",
+      "Mangrove Roots: 1D for 1 Stack",
+      "Netherite Ingot: 45D for 1 (Limit: 2 per day)",
+      "Netherite Upgrade Copy: 3D for 1",
+      "Oak Logs: 2D for 1 Stack",
+      "Oak Logs: 20D for 1 Shulker",
+      "Ominous Key: 5D for 1",
+      "Pale Oak Logs: 2D for 1 Stack",
+      "Pale Oak Logs: 20D for 1 Shulker",
+      "Poplar Logs: 2D for 1 Stack",
+      "Poplar Logs: 20D for 1 Shulker",
+      "Rocket T3: 1D for 2 Stacks",
+      "Rocket T3: 13D for 1 Shulker",
+      "Shulker Shell: 1D for 1 Stack",
+      "Shulker Shell: 27D for 1 Stack (Limit: 1 per day)",
+      "Soul Speed III: 3D for 1",
+      "Spruce Logs: 2D for 1 Stack",
+      "Spruce Logs: 20D for 1 Shulker"
+    ]
+  },
+  {
+    "name": "101 Pistons",
+    "owner": "DFZ_FDT",
+    "type": "general",
+    "location": "26, -44",
+    "tags": ["redstone","building-blocks","valuables"],
+    "items": [
+      "Ancient Debris: 12D for 1",
+      "Comparator: 8D for 1 Stack",
+      "Copper Golems: 4D for 32",
+      "Observer: 8D for 1 Stack",
+      "Piston: 4D for 1 Stack",
+      "Redstone Block: 8D for 1 Stack",
+      "Redstone Dust: 1D for 1 Stack",
+      "Redstone Torch: 1D for 1 Stack",
+      "Repeater: 4D for 1 Stack",
+      "Sticky Piston: 8D for 1 Stack"
+    ]
+  },
   {
     "name": "The Riches of Prunrose",
     "owner": "MysticScarab660",
     "type": "specialized",
     "location": "22, 6",
-    "tags": [
-      "valuables"
-    ],
+    "tags": ["valuables"],
     "items": [
       "Ancient Debris: 12D for 1",
       "Ancient Debris: 243D for 27 (27 Diamond Blocks, in 1 Shulker)",
@@ -1705,9 +1653,7 @@ window.SHOPS = [
     "owner": "milkywonderhoy",
     "type": "specialized",
     "location": "29, 6",
-    "tags": [
-      "decoration"
-    ],
+    "tags": ["decoration"],
     "items": [
       "Lesbian Banner: 1D for 1",
       "Nonbinary Banner: 1D for 1",
@@ -1728,11 +1674,7 @@ window.SHOPS = [
     "owner": "milkywonderhoy",
     "type": "specialized",
     "location": "25, -82",
-    "tags": [
-      "food",
-      "nature",
-      "building-blocks"
-    ],
+    "tags": ["food","nature","building-blocks"],
     "items": [
       "Honeycomb: 1D for 32",
       "Honeycomb Block: 4D for 1 Stack",
@@ -1741,5 +1683,4 @@ window.SHOPS = [
       "Honey Block: 2D for 32"
     ]
   }
-]
-
+];

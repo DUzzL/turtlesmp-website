@@ -52,28 +52,40 @@
         || shop.items.some(i => i.toLowerCase().includes(ql));
   }
 
-  function updateCardHeights() {
+  function updateCardLayout() {
     const cards = [...shopGrid.querySelectorAll('.shop-card')];
-    cards.forEach(card => card.classList.remove('independent-height'));
-    if (searchInput.value.trim()) return;
+    if (!cards.length) return;
 
-    const rows = new Map();
-    cards.forEach(card => {
-      const top = card.offsetTop;
-      if (!rows.has(top)) rows.set(top, []);
-      rows.get(top).push(card);
+    const columns = getComputedStyle(shopGrid).gridTemplateColumns.split(' ').length;
+    const expandedOffers = cards.map(card => {
+      const offers = card.querySelector('.shop-offers');
+      const wasHidden = offers.hidden;
+      offers.hidden = true;
+      card.style.minHeight = '';
+      card.style.gridRowEnd = '';
+      return { offers, wasHidden };
     });
-    rows.forEach(row => {
-      if (row.some(card => card.querySelector('[aria-expanded="true"]'))) {
-        row.forEach(card => card.classList.add('independent-height'));
+
+    // Keep the initial overview aligned, while searches use each card's natural height.
+    const heights = cards.map(card => card.getBoundingClientRect().height);
+    if (!searchInput.value.trim()) {
+      for (let i = 0; i < cards.length; i += columns) {
+        const rowHeight = Math.max(...heights.slice(i, i + columns));
+        cards.slice(i, i + columns).forEach(card => { card.style.minHeight = rowHeight + 'px'; });
       }
+    }
+    expandedOffers.forEach(({ offers, wasHidden }) => { offers.hidden = wasHidden; });
+
+    const spans = cards.map(card => Math.ceil(card.getBoundingClientRect().height + 20));
+    cards.forEach((card, index) => {
+      card.style.gridColumn = String(index % columns + 1);
+      card.style.gridRowEnd = 'span ' + spans[index];
     });
   }
 
   function render() {
     const q = searchInput.value.trim();
     const ql = q.toLowerCase();
-    shopGrid.classList.toggle('searching', Boolean(q));
 
     const filtered = SHOPS.filter(s => {
       if (activeTags.size && !s.tags.some(t => activeTags.has(t))) return false;
@@ -134,10 +146,11 @@
         const expanded = toggle.getAttribute('aria-expanded') === 'true';
         toggle.setAttribute('aria-expanded', String(!expanded));
         offers.hidden = expanded;
-        updateCardHeights();
+        updateCardLayout();
       });
       shopGrid.appendChild(card);
     });
+    updateCardLayout();
   }
 
   let debounce;
@@ -146,6 +159,7 @@
     debounce = setTimeout(render, 80);
   });
 
-  window.addEventListener('resize', updateCardHeights);
+  window.addEventListener('resize', updateCardLayout);
+  if (document.fonts) document.fonts.ready.then(updateCardLayout);
   render();
 })();

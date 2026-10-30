@@ -1,5 +1,9 @@
 (function () {
-  const slides = window.TURTLE_GALLERY || [];
+  const slides = [...(window.TURTLE_GALLERY || [])];
+  for (let i = slides.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [slides[i], slides[j]] = [slides[j], slides[i]];
+  }
   const image = document.getElementById('gallery-image');
   const backdrop = document.getElementById('gallery-backdrop');
   const credit = document.getElementById('gallery-credit');

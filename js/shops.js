@@ -146,7 +146,7 @@
         const expanded = toggle.getAttribute('aria-expanded') === 'true';
         toggle.setAttribute('aria-expanded', String(!expanded));
         offers.hidden = expanded;
-        updateCardLayout();
+        card.style.gridRowEnd = 'span ' + Math.ceil(card.getBoundingClientRect().height + 20);
       });
       shopGrid.appendChild(card);
     });

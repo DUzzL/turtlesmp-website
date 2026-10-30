@@ -85,9 +85,7 @@
       const card = document.createElement('div');
       card.className = 'shop-card ' + s.type;
 
-      const matched = q ? s.items.filter(i => i.toLowerCase().includes(ql)) : s.items;
-      const visible = matched.slice(0, 12);
-      const more = matched.length - visible.length;
+      const matched = q ? s.items.filter(i => i.toLowerCase().includes(ql)) : [];
 
       card.innerHTML = `
         <div class="shop-head">
@@ -99,13 +97,13 @@
           <div class="row"><span class="key">At</span><span>${s.location.trim() ? escape(s.location) : 'Not specified'}</span></div>
           <div class="row"><span class="key">Tags</span><div class="shop-tags">${s.tags.map(t => `<span class="shop-tag">${highlight(t, q)}</span>`).join('')}</div></div>
         </div>
-        <div class="shop-items">
-          <span class="label">${q ? `Matched (${matched.length})` : `Sells (${s.items.length})`}</span>
+        <details class="shop-items">
+          <summary><span>Sells (${s.items.length})</span><span class="shop-items-arrow" aria-hidden="true">⌄</span></summary>
           <div class="item-list">
-            ${visible.map(i => `<span class="item">${highlight(i, q)}</span>`).join('')}
-            ${more > 0 ? `<span class="item more">+${more} more</span>` : ''}
+            ${s.items.map(i => `<span class="item">${highlight(i, q)}</span>`).join('')}
           </div>
-        </div>
+        </details>
+        ${matched.length ? `<div class="shop-matches"><span class="label">Matching items (${matched.length})</span><div class="item-list">${matched.map(i => `<span class="item">${highlight(i, q)}</span>`).join('')}</div></div>` : ''}
       `;
       shopGrid.appendChild(card);
     });

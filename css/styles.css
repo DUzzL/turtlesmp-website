@@ -45,3 +45,18 @@ button:disabled{opacity:.5;cursor:not-allowed}
 
 .gallery-bar > div:first-child{min-width:0;max-width:100%;overflow:hidden}
 #gallery-credit{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Keep the rules index orderly on small screens. */
+@media(max-width:560px){.rules-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 12px}.rules-index-title{grid-column:1/-1;margin-bottom:8px}.rules-index a{display:flex;align-items:center;min-width:0;min-height:44px;line-height:1.35}}
+
+/* Shop offers remain collapsed until requested. */
+.shop-grid{align-items:start}
+.shop-items summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;border-top:1px solid var(--line);color:var(--ink);font-size:.9rem;font-weight:600;cursor:pointer;list-style:none}
+.shop-items summary::-webkit-details-marker{display:none}
+.shop-items summary:hover{color:var(--accent)}
+.shop-items-arrow{font-size:1.3rem;line-height:1;transition:transform .2s}
+.shop-items[open] .shop-items-arrow{transform:rotate(180deg)}
+.shop-items .item-list{padding:8px 0 0}
+.shop-matches{padding-top:8px}
+.shop-matches .label{display:block;margin-bottom:8px;color:var(--muted);font-size:.85rem}
+.shop-items[open]+.shop-matches{display:none}

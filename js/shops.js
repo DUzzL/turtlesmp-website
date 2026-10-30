@@ -52,9 +52,28 @@
         || shop.items.some(i => i.toLowerCase().includes(ql));
   }
 
+  function updateCardHeights() {
+    const cards = [...shopGrid.querySelectorAll('.shop-card')];
+    cards.forEach(card => card.classList.remove('independent-height'));
+    if (searchInput.value.trim()) return;
+
+    const rows = new Map();
+    cards.forEach(card => {
+      const top = card.offsetTop;
+      if (!rows.has(top)) rows.set(top, []);
+      rows.get(top).push(card);
+    });
+    rows.forEach(row => {
+      if (row.some(card => card.querySelector('[aria-expanded="true"]'))) {
+        row.forEach(card => card.classList.add('independent-height'));
+      }
+    });
+  }
+
   function render() {
     const q = searchInput.value.trim();
     const ql = q.toLowerCase();
+    shopGrid.classList.toggle('searching', Boolean(q));
 
     const filtered = SHOPS.filter(s => {
       if (activeTags.size && !s.tags.some(t => activeTags.has(t))) return false;
@@ -81,11 +100,13 @@
     const unknownCount = filtered.length - specCount - genCount;
     resultsCount.innerHTML = `<strong>${filtered.length}</strong> shop${filtered.length === 1 ? '' : 's'} · ${specCount} specialized, ${genCount} general${unknownCount ? `, ${unknownCount} unspecified` : ''}`;
 
-    filtered.forEach(s => {
+    filtered.forEach((s, index) => {
       const card = document.createElement('div');
       card.className = 'shop-card ' + s.type;
 
       const matched = q ? s.items.filter(i => i.toLowerCase().includes(ql)) : [];
+      const remaining = q ? s.items.filter(i => !i.toLowerCase().includes(ql)) : s.items;
+      const offersId = 'shop-offers-' + index;
 
       card.innerHTML = `
         <div class="shop-head">
@@ -97,14 +118,24 @@
           <div class="row"><span class="key">At</span><span>${s.location.trim() ? escape(s.location) : 'Not specified'}</span></div>
           <div class="row"><span class="key">Tags</span><div class="shop-tags">${s.tags.map(t => `<span class="shop-tag">${highlight(t, q)}</span>`).join('')}</div></div>
         </div>
-        <details class="shop-items">
-          <summary><span>Sells (${s.items.length})</span><span class="shop-items-arrow" aria-hidden="true">⌄</span></summary>
-          <div class="item-list">
-            ${s.items.map(i => `<span class="item">${highlight(i, q)}</span>`).join('')}
+        <div class="shop-items">
+          <button type="button" class="shop-items-toggle" aria-expanded="false" aria-controls="${offersId}">
+            <span>Sells (${s.items.length})</span><svg class="shop-items-arrow" aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path d="m3 6 5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          ${matched.length ? `<div class="shop-matches"><span class="label">Matching items (${matched.length})</span><div class="item-list">${matched.map(i => `<span class="item">${highlight(i, q)}</span>`).join('')}</div></div>` : ''}
+          <div class="shop-offers" id="${offersId}" hidden>
+            ${remaining.length ? `<div class="item-list">${remaining.map(i => `<span class="item">${highlight(i, q)}</span>`).join('')}</div>` : '<p class="shop-no-more">No other items.</p>'}
           </div>
-        </details>
-        ${matched.length ? `<div class="shop-matches"><span class="label">Matching items (${matched.length})</span><div class="item-list">${matched.map(i => `<span class="item">${highlight(i, q)}</span>`).join('')}</div></div>` : ''}
+        </div>
       `;
+      const toggle = card.querySelector('.shop-items-toggle');
+      const offers = card.querySelector('.shop-offers');
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        offers.hidden = expanded;
+        updateCardHeights();
+      });
       shopGrid.appendChild(card);
     });
   }
@@ -115,5 +146,6 @@
     debounce = setTimeout(render, 80);
   });
 
+  window.addEventListener('resize', updateCardHeights);
   render();
 })();

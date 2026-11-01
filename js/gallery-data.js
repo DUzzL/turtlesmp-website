@@ -301,5 +301,11 @@ window.TURTLE_GALLERY = [
     "src": "img/gallery/060.webp",
     "credit": "Shared by strwbrryghast",
     "source": "strwbrryghast(8).png"
+  },
+  {
+    "src": "img/gallery/061.webp",
+    "alt": "Four players in armor standing together in a tunnel above lava",
+    "credit": "Shared by the Turtle SMP community",
+    "source": "image.png"
   }
 ];

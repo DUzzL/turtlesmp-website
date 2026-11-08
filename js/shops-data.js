@@ -724,9 +724,7 @@ window.SHOPS = [
       "Rent a working bee to do stuff for you",
       "Enchanted Trident: 8D for 1",
       "Bottle o' Enchanting: 1D for 32",
-      "Golden Carrots: 1D for 2 Stack",
-      "Breeze Rods: 2D for 16",
-      "Ominous Trial Key: 5D for 1"
+      "Golden Carrots: 1D for 2 Stack"
     ]
   },
   {
@@ -1714,5 +1712,54 @@ window.SHOPS = [
       "Spyglass: 2D for 1",
       "Compass: 1D for 1"
     ]
+  },
+  {
+    "name": "Poidragon's Treasure Chamber",
+    "owner": "Poidragon",
+    "type": "specialized",
+    "location": "50, 0",
+    "tags": [
+      "mob-drops",
+      "valuables"
+    ],
+    "items": [
+      "Breeze Rods: 6D for 1 Stack",
+      "Ominous Trial Key: 5D for 1",
+      "Ominous Trial Key: 108D for 27"
+    ]
+  },
+  {
+    "name": "Netherite Bastion",
+    "owner": "RiceEnjoyer",
+    "type": "general",
+    "location": "22, -167",
+    "tags": [
+      "valuables",
+      "food",
+      "equipment"
+    ],
+    "items": [
+      "Golden Apples: 16D for 1 Stack",
+      "Netherite Ingot: 32D for 1",
+      "Netherite Items: Price not specified"
+    ]
+  },
+  {
+    "name": "Interesting Banners",
+    "owner": "Int_resting",
+    "type": "specialized",
+    "location": "-154, 225",
+    "tags": [
+      "decoration"
+    ],
+    "items": [
+      "Patterned Banners: 1D + 1 Banner for 1",
+      "Custom Banner Kit (6 Dyes and 1 Banner): 2D for 1",
+      "Plain Banners: 1D for 1",
+      "Banner Patterns: Free to use"
+    ]
   }
 ];
+
+
+

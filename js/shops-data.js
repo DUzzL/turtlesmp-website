@@ -471,8 +471,8 @@ window.SHOPS = [
     ]
   },
   {
-    "name": "The Skulk Emporium",
-    "owner": "Kush_XD",
+    "name": "The Sculk Emporium",
+    "owner": "Alansis3000",
     "type": "specialized",
     "location": "47,21",
     "tags": ["decoration","redstone"],
@@ -1740,8 +1740,20 @@ window.SHOPS = [
     ],
     "items": [
       "Golden Apples: 16D for 1 Stack",
-      "Netherite Ingot: 32D for 1",
-      "Netherite Items: Price not specified"
+      "Netherite Ingot: 36D for 1",
+      "Netherite Helmet (5 Enchantments): 62D for 1",
+      "Netherite Helmet (Thorns III, 6 Enchantments): 64D for 1",
+      "Netherite Chestplate (3 Enchantments): 58D for 1",
+      "Netherite Chestplate (Thorns III, 4 Enchantments): 60D for 1",
+      "Netherite Leggings (4 Enchantments): 60D for 1",
+      "Netherite Leggings (Thorns III, 5 Enchantments): 62D for 1",
+      "Netherite Boots (6 Enchantments): 64D for 1",
+      "Netherite Boots (Thorns III, 7 Enchantments): 64D for 1",
+      "Netherite Sword (6 Enchantments): 64D for 1",
+      "Netherite Sword (Knockback II, 7 Enchantments): 64D for 1",
+      "Netherite Axe (5 Enchantments): 62D for 1",
+      "Netherite Pickaxe (Fortune III, 4 Enchantments): 60D for 1",
+      "Netherite Pickaxe (Silk Touch, 4 Enchantments): 60D for 1"
     ]
   },
   {
@@ -1760,6 +1772,8 @@ window.SHOPS = [
     ]
   }
 ];
+
+
 
 
 

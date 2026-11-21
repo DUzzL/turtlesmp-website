@@ -86,8 +86,8 @@ window.SHOPS = [
     ]
   },
   {
-    "name": "Food Truck's by TurtleInc",
-    "owner": "TurtleAddict",
+    "name": "Food Truck",
+    "owner": "MrBlubbii",
     "type": "general",
     "location": "-82, -90",
     "tags": ["food","mob-drops"],
